@@ -93,11 +93,6 @@ fun main()
 
 
 
-
-
-
-
-
 //дима таранов     1
 
 //00000000
@@ -723,7 +718,6 @@ fun main228 () {
     var a = readLine().toString().toDouble()
     println(4*a)
 }
-
 
 
 
