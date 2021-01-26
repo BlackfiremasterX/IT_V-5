@@ -40,6 +40,7 @@ fun main() {
 import kotlin.random.Random
 fun main()
 {
+    B1()
     var a = Random.nextInt(1,8)
 
 
@@ -397,7 +398,13 @@ fun main()
 
 
 
+fun B1()
+{
+    var a = 2
+    var P =4*a
+    print(P)
 
+}
 
 
 
