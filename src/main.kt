@@ -698,7 +698,11 @@ fun main()
 
 
 //строчки 228 339 (начало)
-
+fun main () {
+    var a = readLine().toString().toDouble()
+    var P = 4*a
+    println(P)
+}
 
 
 
