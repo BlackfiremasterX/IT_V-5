@@ -40,6 +40,7 @@ fun main() {
 import kotlin.random.Random
 fun main()
 {
+    B1()
     var a = Random.nextInt(1,8)
 
 
@@ -99,6 +100,12 @@ fun main()
 
 //дима таранов     1
 
+//00000000
+//0  00  0
+//00    00
+//0 0000 0
+//00000000
+//маинкрафт
 
 
 
@@ -397,6 +404,14 @@ fun main()
 
 
 
+
+fun B1()
+{
+    var a = 2
+    var P =4*a
+    print(P)
+
+}
 
 
 
