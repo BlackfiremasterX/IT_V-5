@@ -37,6 +37,7 @@ fun main() {
 
 //    var Week = readLine()!!.toInt()
 //    var Year = readLine()!!.toInt()
+import kotlin.math.sqrt
 import kotlin.random.Random
 fun main()
 {
@@ -788,7 +789,13 @@ fun B1()
 
 
 
-
+fun begin9() {
+    println("a: ")
+    var a = readLine().toString().toDouble()
+    println("b: ")
+    var b = readLine().toString().toDouble()
+    println(sqrt(a*b))
+}
 
 
 
