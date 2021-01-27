@@ -741,16 +741,23 @@ fun B1()
 
 
 
-fun begin4() {
-    println("d: ")
-    var d = readLine().toString().toDouble()
-    var pi = 3.14 //Для значения и исользовать 3.14
-    println(pi*d)
+//fun begin4() {
+//    println("d: ")
+//    var d = readLine().toString().toDouble()
+//    var pi = 3.14 //Для значения пи использовать 3.14
+//    println(pi*d)
+//}
+
+
+
+fun begin5() {
+    println("a: ")
+    var a = readLine().toString().toDouble()
+    var V = a*a*a
+    var S = 6*(a*a)
+    println("V = $V")
+    println("S = $S")
 }
-
-
-
-
 
 
 
