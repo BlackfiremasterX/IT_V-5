@@ -744,7 +744,7 @@ fun B1()
 //fun begin4() {
 //    println("d: ")
 //    var d = readLine().toString().toDouble()
-//    var pi = 3.14 //Для значения пи использовать 3.14
+//    var pi = 3.14 //В качестве значения пи использовать 3.14
 //    println(pi*d)
 //}
 
@@ -761,22 +761,30 @@ fun B1()
 
 
 
-fun begin6() {
-    println("a: ")
-    var a = readLine().toString().toDouble()
-    println("b: ")
-    var b = readLine().toString().toDouble()
-    println("h: ")
-    var h = readLine().toString().toDouble()
-    var V = a*b*h
-    var S = 2*(a*b+h*b+a*h)
-    println("V = $V")
+//fun begin6() {
+//    println("a: ")
+//    var a = readLine().toString().toDouble()
+//    println("b: ")
+//    var b = readLine().toString().toDouble()
+//    println("h: ")
+//    var h = readLine().toString().toDouble()
+//    var V = a*b*h
+//    var S = 2*(a*b+h*b+a*h)
+//    println("V = $V")
+//    println("S = $S")
+//}
+
+
+
+fun begin7() {
+    println("R: ")
+    var R = readLine().toString().toDouble()
+    var pi = 3.14 //В качестве значения пи использовать 3.14
+    var L = 2*pi*R
+    var S = pi*(R*R)
+    println("L = $L")
     println("S = $S")
 }
-
-
-
-
 
 
 
