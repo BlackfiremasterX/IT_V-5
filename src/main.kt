@@ -776,15 +776,15 @@ fun B1()
 
 
 
-fun begin7() {
-    println("R: ")
-    var R = readLine().toString().toDouble()
-    var pi = 3.14 //В качестве значения пи использовать 3.14
-    var L = 2*pi*R
-    var S = pi*(R*R)
-    println("L = $L")
-    println("S = $S")
-}
+//fun begin7() {
+//    println("R: ")
+//    var R = readLine().toString().toDouble()
+//    var pi = 3.14 //В качестве значения пи использовать 3.14
+//    var L = 2*pi*R
+//    var S = pi*(R*R)
+//    println("L = $L")
+//    println("S = $S")
+//}
 
 
 
