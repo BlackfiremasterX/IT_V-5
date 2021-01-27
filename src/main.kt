@@ -713,10 +713,14 @@ fun B1()
 
 
 
-//строчки 228 339 (начало)
-fun main228 () {
+////просто строчки (начало)
+//fun begin1 () {
+//    var a = readLine().toString().toDouble()
+//    println(4*a)
+//}
+fun begin2() {
     var a = readLine().toString().toDouble()
-    println(4*a)
+    println(a*a)
 }
 
 
@@ -812,8 +816,7 @@ fun main228 () {
 
 
 
-
-//строчки 228 339 (конец)
+//просто строчки (конец)
 
 
 
