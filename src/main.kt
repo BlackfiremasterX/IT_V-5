@@ -297,11 +297,31 @@ fun main()
 
 
 
+//рита понасенко
 
+//integer 1
+  fun main() {
+    var a = readLine()!!.toInt()
+    var b:= Int
+    b = a / 100
+    print(b)
+}
 
+// integer 19
+    fun main(){
+        var N = readLine()!!.toInt()
+        var M: Int
+        M = N/60
+        print(M)
 
-
-
+    }
+// begin 2
+    fun main(){
+        var a = readLine()!!.toInt()
+        var S: Int
+        S = a*a
+        print(S)
+    }
 
 
 
