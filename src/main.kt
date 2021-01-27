@@ -718,11 +718,26 @@ fun B1()
 //    var a = readLine().toString().toDouble()
 //    println(4*a)
 //}
-fun begin2() {
-    var a = readLine().toString().toDouble()
-    println(a*a)
-}
 
+
+
+//fun begin2() {
+//    var a = readLine().toString().toDouble()
+//    println(a*a)
+//}
+
+
+
+fun begin3() {
+    println("a: ")
+    var a = readLine().toString().toDouble()
+    println("b: ")
+    var b = readLine().toString().toDouble()
+    var S = a*b
+    var P = 2*(a+b)
+    println("S = $S")
+    println("P = $P")
+}
 
 
 
