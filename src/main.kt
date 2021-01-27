@@ -728,20 +728,25 @@ fun B1()
 
 
 
-fun begin3() {
-    println("a: ")
-    var a = readLine().toString().toDouble()
-    println("b: ")
-    var b = readLine().toString().toDouble()
-    var S = a*b
-    var P = 2*(a+b)
-    println("S = $S")
-    println("P = $P")
+//fun begin3() {
+//    println("a: ")
+//    var a = readLine().toString().toDouble()
+//    println("b: ")
+//    var b = readLine().toString().toDouble()
+//    var S = a*b
+//    var P = 2*(a+b)
+//    println("S = $S")
+//    println("P = $P")
+//}
+
+
+
+fun begin4() {
+    println("d: ")
+    var d = readLine().toString().toDouble()
+    var pi = 3.14 //Для значения и исользовать 3.14
+    println(pi*d)
 }
-
-
-
-
 
 
 
