@@ -306,7 +306,7 @@ fun main()
     b = a / 100
     print(b)
 }
-
+//fffff
 // integer 19
     fun main(){
         var N = readLine()!!.toInt()
