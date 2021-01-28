@@ -7,6 +7,7 @@ fun main()
     when(user_choise)
     {
         "b12" -> Begin12()
+        "b23" -> Begin23()
         else -> println("Такой задачи нет!")
     }
 }
@@ -24,6 +25,14 @@ fun Begin12()//Михаил Розенталь
     var Pcpow = a+b+cpow
     print("Гипотенуза с = $c \n Гипотенуза сpow = $cpow \n")
     print("Периметр = $P \n Периметр(pow) = $Pcpow \n")
+}
+
+
+
+fun Begin23()
+{
+
+
 }
 
 
