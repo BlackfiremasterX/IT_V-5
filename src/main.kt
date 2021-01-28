@@ -38,15 +38,15 @@ fun main() {
 //    var Week = readLine()!!.toInt()
 //    var Year = readLine()!!.toInt()
 import kotlin.math.sqrt
-import kotlin.random.Random
-fun main()
-{
-    B1()
-    var a = Random.nextInt(1,8)
-
-
-
-}
+//import kotlin.random.Random
+//fun main()
+//{
+//    B1()
+//    var a = Random.nextInt(1,8)
+//
+//
+//
+//}
 
 
 
