@@ -512,10 +512,10 @@ fun main() {
     var x2 = readLine()!!.toInt()
     print("Введите кординату куда пойдёт конь по горизонтали(от 1 до 8):")
     var y2 = readLine()!!.toInt()
-    var v = abs (x1-x2)
-    var g = abs(y1-y2)
-    var h = abs(x1-x2)+ abs(y1-y2)
-    print(yes.and((h == 3 )&&((g==1)||(g==2)&&((h==1)||(h==2)))))
+    var vertikal = abs (x1-x2)
+    var gorizontal = abs(y1-y2)
+    var hod = abs(x1-x2)+ abs(y1-y2)
+    print(yes.and((hod == 3 )&&((gorizontal==1)||(gorizontal==2))&&((vertikal==1)||(vertikal==2))))
 }
 
 
