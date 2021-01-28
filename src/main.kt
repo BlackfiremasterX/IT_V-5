@@ -839,7 +839,7 @@ fun Begin12()
 ////fun begin5() {
 ////    println("a: ")
 ////    var a = readLine().toString().toDouble()
-////    var V = a*a*a
+////    var V = a.pow(3)
 ////    var S = 6*(a*a)
 ////    println("V = $V")
 ////    println("S = $S")
