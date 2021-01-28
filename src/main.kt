@@ -198,134 +198,134 @@ import kotlin.math.sqrt
 
 
 //ето мая точка, вы кто такие, я вас не звал, идите нахфиг) "ArtemKorol1999"
-fun main()
-{
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-//здесь заканчиваются владения ArtemKorol1999 и вы вольны делать все что угодно
+//fun main()
+//{
+//print("как дела")
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//}
+// здесь заканчиваются владения ArtemKorol1999 и вы вольны делать все что угодно
 //как дела    а? "ЭТО МОИ СТРОЧКИ
 
 
 //рита понасенко
 
-//integer 1
-  fun main() {
-    var a = readLine()!!.toInt()
-    var b:= Int
-    b = a / 100
-    print(b)
-}
-//fffff
-// integer 19
-    fun main(){
-        var N = readLine()!!.toInt()
-        var M: Int
-        M = N/60
-        print(M)
-
-    }
-// begin 2
-    fun main(){
-        var a = readLine()!!.toInt()
-        var S: Int
-        S = a*a
-        print(S)
-    }
+////integer 1
+//  fun main() {
+//    var a = readLine()!!.toInt()
+//    var b:= Int
+//    b = a / 100
+//    print(b)
+//}
+////fffff
+//// integer 19
+//    fun main(){
+//        var N = readLine()!!.toInt()
+//        var M: Int
+//        M = N/60
+//        print(M)
+//
+//    }
+//// begin 2
+//    fun main(){
+//        var a = readLine()!!.toInt()
+//        var S: Int
+//        S = a*a
+//        print(S)
+//    }
 
 
 
@@ -501,26 +501,26 @@ fun B1()
 
 
 
-import kotlin.math.abs
-
+//import kotlin.math.abs
+//
 //Савелий Соломатов
-fun main() {
-    //Boolean 40
-    var yes = true;
-    var no = false;
-    print("Введите кординату где стоит конь по вертикали(от 1 до 8):")
-    var x1 = readLine()!!.toInt()
-    print("Введите кординату где стоит конь по горизонтали(от 1 до 8):")
-    var y1 = readLine()!!.toInt()
-    print("Введите кординату куда пойдёт конь по вертикали(от 1 до 8):")
-    var x2 = readLine()!!.toInt()
-    print("Введите кординату куда пойдёт конь по горизонтали(от 1 до 8):")
-    var y2 = readLine()!!.toInt()
-    var vertikal = abs (x1-x2)
-    var gorizontal = abs(y1-y2)
-    var hod = abs(x1-x2)+ abs(y1-y2)
-    print(yes.and((hod == 3 )&&((gorizontal==1)||(gorizontal==2))&&((vertikal==1)||(vertikal==2))))
-}
+//fun main() {
+//    //Boolean 40
+//    var yes = true;
+//    var no = false;
+//    print("Введите кординату где стоит конь по вертикали(от 1 до 8):")
+//    var x1 = readLine()!!.toInt()
+//    print("Введите кординату где стоит конь по горизонтали(от 1 до 8):")
+//    var y1 = readLine()!!.toInt()
+//    print("Введите кординату куда пойдёт конь по вертикали(от 1 до 8):")
+//    var x2 = readLine()!!.toInt()
+//    print("Введите кординату куда пойдёт конь по горизонтали(от 1 до 8):")
+//    var y2 = readLine()!!.toInt()
+//    var vertikal = abs (x1-x2)
+//    var gorizontal = abs(y1-y2)
+//    var hod = abs(x1-x2)+ abs(y1-y2)
+//    print(yes.and((hod == 3 )&&((gorizontal==1)||(gorizontal==2))&&((vertikal==1)||(vertikal==2))))
+//}
 
 
 
