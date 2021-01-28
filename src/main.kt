@@ -37,7 +37,7 @@ fun main() {
 
 //    var Week = readLine()!!.toInt()
 //    var Year = readLine()!!.toInt()
-import kotlin.math.sqrt
+//import kotlin.math.sqrt
 //import kotlin.random.Random
 //fun main()
 //{
@@ -91,7 +91,6 @@ import kotlin.math.sqrt
 
 
 
-768
 
 
 //дима таранов     1
@@ -296,7 +295,7 @@ import kotlin.math.sqrt
 
 
 
-}
+//}
 // здесь заканчиваются владения ArtemKorol1999 и вы вольны делать все что угодно
 //как дела    а? "ЭТО МОИ СТРОЧКИ
 
@@ -856,7 +855,6 @@ import kotlin.math.sqrt
 //    var l = readLine().toString().toDouble()
 //    println(l*100)
 //}
-
 
 
 
