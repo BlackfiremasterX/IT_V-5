@@ -865,7 +865,9 @@ fun integer3() {
 
 
 
+fun begin12() {
 
+}
 
 
 
