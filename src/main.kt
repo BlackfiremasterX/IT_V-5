@@ -1,3 +1,4 @@
+import kotlin.math.*
 /*
 fun main() {
     var truePassword = "123456"
@@ -851,14 +852,16 @@ fun main() {
 
 
 //fun integer1() {
-//    println("L (в метрах) :")
+//    println("L:")
 //    var l = readLine().toString().toDouble()
 //    println(l*100)
 //}
 
 
 
-
+fun integer3() {
+    println("")
+}
 
 
 
