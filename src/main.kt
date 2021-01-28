@@ -4,8 +4,28 @@ fun main()
 {
     print("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)\nСписок доступных задач:\nBegin12\n")
     print("Выберите задачу: "); var user_choise = readLine()
-
+    when(user_choise)
+    {
+        "b12" -> Begin12()
+        else -> println("Такой задачи нет!")
+    }
 }
+
+fun Begin12()
+{
+    print("\nBegin12\nДаны катеты прямоугольного треугольника a и b. Найти его гипотенузу и периметр P.\n")
+    print("Введите катет а: ")
+    var a = readLine()!!.toDouble()
+    print("Введите катет b: ")
+    var b = readLine()!!.toDouble()
+    var c = sqrt(a.pow(2)+b.pow(2)) //sqrt(*выражение*) = (*выражение*).pow(0.5)
+    var cpow = (a.pow(2)+b.pow(2)).pow(0.5)
+    var P = a+b+c
+    var Pcpow = a+b+cpow
+    print("Гипотенуза с = $c \n Гипотенуза сpow = $cpow \n")
+    print("Периметр = $P \n Периметр(pow) = $Pcpow \n")
+}
+
 
 //
 //
