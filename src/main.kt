@@ -7,11 +7,12 @@ fun main()
     when(user_choise)
     {
         "b12" -> Begin12()
+        "b23" -> Begin23()
         else -> println("Такой задачи нет!")
     }
 }
 
-fun Begin12()
+fun Begin12()//Михаил Розенталь
 {
     print("\nBegin12\nДаны катеты прямоугольного треугольника a и b. Найти его гипотенузу и периметр P.\n")
     print("Введите катет а: ")
@@ -24,6 +25,14 @@ fun Begin12()
     var Pcpow = a+b+cpow
     print("Гипотенуза с = $c \n Гипотенуза сpow = $cpow \n")
     print("Периметр = $P \n Периметр(pow) = $Pcpow \n")
+}
+
+
+
+fun Begin23()
+{
+
+
 }
 
 
@@ -798,7 +807,7 @@ var
 ////fun begin5() {
 ////    println("a: ")
 ////    var a = readLine().toString().toDouble()
-////    var V = a*a*a
+////    var V = a.pow(3)
 ////    var S = 6*(a*a)
 ////    println("V = $V")
 ////    println("S = $S")
