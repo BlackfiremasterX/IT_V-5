@@ -828,13 +828,13 @@ fun main() {
 
 
 
-fun begin8() {
-    println("a: ")
-    var a = readLine().toString().toDouble()
-    println("b: ")
-    var b = readLine().toString().toDouble()
-    println((a+b)/2)
-}
+//fun begin8() {
+//    println("a: ")
+//    var a = readLine().toString().toDouble()
+//    println("b: ")
+//    var b = readLine().toString().toDouble()
+//    println((a+b)/2)
+//}
 
 
 //fun begin9() {
