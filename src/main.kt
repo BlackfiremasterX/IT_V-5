@@ -756,20 +756,20 @@ fun main() {
 
 
 
-fun main228() {
-////просто строчки (начало)
-println("Введите задачу")
 
+////просто строчки (начало)
 //fun begin1 () {
 //    var a = readLine().toString().toDouble()
 //    println(4*a)
 //}
 
 
+
 //fun begin2() {
 //    var a = readLine().toString().toDouble()
 //    println(a*a)
 //}
+
 
 
 //fun begin3() {
@@ -784,12 +784,14 @@ println("Введите задачу")
 //}
 
 
+
 //fun begin4() {
 //    println("d: ")
 //    var d = readLine().toString().toDouble()
 //    var pi = 3.14 //В качестве значения пи использовать 3.14
 //    println(pi*d)
 //}
+
 
 
 //fun begin5() {
@@ -800,6 +802,7 @@ println("Введите задачу")
 //    println("V = $V")
 //    println("S = $S")
 //}
+
 
 
 //fun begin6() {
@@ -816,6 +819,7 @@ println("Введите задачу")
 //}
 
 
+
 //fun begin7() {
 //    println("R: ")
 //    var R = readLine().toString().toDouble()
@@ -825,6 +829,7 @@ println("Введите задачу")
 //    println("L = $L")
 //    println("S = $S")
 //}
+
 
 
 //fun begin8() {
@@ -845,6 +850,7 @@ println("Введите задачу")
 //}
 
 
+
 //fun integer1() {
 //    println("L:")
 //    var l = readLine().toString().toDouble()
@@ -852,9 +858,11 @@ println("Введите задачу")
 //}
 
 
+
 //fun integer3() {
 //    println("")
 //}
+
 
 
 //fun begin12() {
@@ -862,13 +870,13 @@ println("Введите задачу")
 //    var a = readLine().toString().toDouble()
 //    println("b: ")
 //    var b = readLine().toString().toDouble()
-//    var c = sqrt(a.pow(2)+b.pow(2))
+//    var c = sqrt((a*a)+(b*b))
 //    var p = a+b+c
 //    println("c = $c")
 //    println("P = $p")
 //}
 
-}
+
 
 
 
