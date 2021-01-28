@@ -865,9 +865,16 @@ fun main() {
 
 
 
-fun begin12() {
-
-}
+//fun begin12() {
+//    println("a: ")
+//    var a = readLine().toString().toDouble()
+//    println("b: ")
+//    var b = readLine().toString().toDouble()
+//    var c = sqrt((a*a)+(b*b))
+//    var p = a+b+c
+//    println("c = $c")
+//    println("P = $p")
+//}
 
 
 
