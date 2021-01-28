@@ -37,6 +37,7 @@ fun main() {
 
 //    var Week = readLine()!!.toInt()
 //    var Year = readLine()!!.toInt()
+import kotlin.math.sqrt
 import kotlin.random.Random
 fun main()
 {
@@ -343,11 +344,31 @@ var c = a-b/a
 
 
 
+//рита понасенко
 
+//integer 1
+  fun main() {
+    var a = readLine()!!.toInt()
+    var b:= Int
+    b = a / 100
+    print(b)
+}
 
+// integer 19
+    fun main(){
+        var N = readLine()!!.toInt()
+        var M: Int
+        M = N/60
+        print(M)
 
-
-
+    }
+// begin 2
+    fun main(){
+        var a = readLine()!!.toInt()
+        var S: Int
+        S = a*a
+        print(S)
+    }
 
 
 
@@ -523,247 +544,25 @@ fun B1()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//строчки 228 339 (начало)
-fun main228 () {
-    var a = readLine().toString().toDouble()
-    println(4*a)
+import kotlin.math.abs
+
+//Савелий Соломатов
+fun main() {
+    //Boolean 40
+    var yes = true;
+    var no = false;
+    print("Введите кординату где стоит конь по вертикали(от 1 до 8):")
+    var x1 = readLine()!!.toInt()
+    print("Введите кординату где стоит конь по горизонтали(от 1 до 8):")
+    var y1 = readLine()!!.toInt()
+    print("Введите кординату куда пойдёт конь по вертикали(от 1 до 8):")
+    var x2 = readLine()!!.toInt()
+    print("Введите кординату куда пойдёт конь по горизонтали(от 1 до 8):")
+    var y2 = readLine()!!.toInt()
+    var vertikal = abs (x1-x2)
+    var gorizontal = abs(y1-y2)
+    var hod = abs(x1-x2)+ abs(y1-y2)
+    print(yes.and((hod == 3 )&&((gorizontal==1)||(gorizontal==2))&&((vertikal==1)||(vertikal==2))))
 }
 
 
@@ -860,7 +659,303 @@ fun main228 () {
 
 
 
-//строчки 228 339 (конец)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////просто строчки (начало)
+//fun begin1 () {
+//    var a = readLine().toString().toDouble()
+//    println(4*a)
+//}
+
+
+
+//fun begin2() {
+//    var a = readLine().toString().toDouble()
+//    println(a*a)
+//}
+
+
+
+//fun begin3() {
+//    println("a: ")
+//    var a = readLine().toString().toDouble()
+//    println("b: ")
+//    var b = readLine().toString().toDouble()
+//    var S = a*b
+//    var P = 2*(a+b)
+//    println("S = $S")
+//    println("P = $P")
+//}
+
+
+
+//fun begin4() {
+//    println("d: ")
+//    var d = readLine().toString().toDouble()
+//    var pi = 3.14 //В качестве значения пи использовать 3.14
+//    println(pi*d)
+//}
+
+
+
+//fun begin5() {
+//    println("a: ")
+//    var a = readLine().toString().toDouble()
+//    var V = a*a*a
+//    var S = 6*(a*a)
+//    println("V = $V")
+//    println("S = $S")
+//}
+
+
+
+//fun begin6() {
+//    println("a: ")
+//    var a = readLine().toString().toDouble()
+//    println("b: ")
+//    var b = readLine().toString().toDouble()
+//    println("h: ")
+//    var h = readLine().toString().toDouble()
+//    var V = a*b*h
+//    var S = 2*(a*b+h*b+a*h)
+//    println("V = $V")
+//    println("S = $S")
+//}
+
+
+
+//fun begin7() {
+//    println("R: ")
+//    var R = readLine().toString().toDouble()
+//    var pi = 3.14 //В качестве значения пи использовать 3.14
+//    var L = 2*pi*R
+//    var S = pi*(R*R)
+//    println("L = $L")
+//    println("S = $S")
+//}
+
+
+
+fun begin9() {
+    println("a: ")
+    var a = readLine().toString().toDouble()
+    println("b: ")
+    var b = readLine().toString().toDouble()
+    println(sqrt(a*b))
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//просто строчки (конец)
 
 
 
