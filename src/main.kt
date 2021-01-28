@@ -501,26 +501,26 @@ fun B1()
 
 
 
-import kotlin.math.abs
-
+//import kotlin.math.abs
+//
 //Савелий Соломатов
-fun main() {
-    //Boolean 40
-    var yes = true;
-    var no = false;
-    print("Введите кординату где стоит конь по вертикали(от 1 до 8):")
-    var x1 = readLine()!!.toInt()
-    print("Введите кординату где стоит конь по горизонтали(от 1 до 8):")
-    var y1 = readLine()!!.toInt()
-    print("Введите кординату куда пойдёт конь по вертикали(от 1 до 8):")
-    var x2 = readLine()!!.toInt()
-    print("Введите кординату куда пойдёт конь по горизонтали(от 1 до 8):")
-    var y2 = readLine()!!.toInt()
-    var vertikal = abs (x1-x2)
-    var gorizontal = abs(y1-y2)
-    var hod = abs(x1-x2)+ abs(y1-y2)
-    print(yes.and((hod == 3 )&&((gorizontal==1)||(gorizontal==2))&&((vertikal==1)||(vertikal==2))))
-}
+//fun main() {
+//    //Boolean 40
+//    var yes = true;
+//    var no = false;
+//    print("Введите кординату где стоит конь по вертикали(от 1 до 8):")
+//    var x1 = readLine()!!.toInt()
+//    print("Введите кординату где стоит конь по горизонтали(от 1 до 8):")
+//    var y1 = readLine()!!.toInt()
+//    print("Введите кординату куда пойдёт конь по вертикали(от 1 до 8):")
+//    var x2 = readLine()!!.toInt()
+//    print("Введите кординату куда пойдёт конь по горизонтали(от 1 до 8):")
+//    var y2 = readLine()!!.toInt()
+//    var vertikal = abs (x1-x2)
+//    var gorizontal = abs(y1-y2)
+//    var hod = abs(x1-x2)+ abs(y1-y2)
+//    print(yes.and((hod == 3 )&&((gorizontal==1)||(gorizontal==2))&&((vertikal==1)||(vertikal==2))))
+//}
 
 
 
