@@ -431,13 +431,13 @@ import kotlin.math.sqrt
 
 
 
-fun B1()
-{
-    var a = 2
-    var P =4*a
-    print(P)
-
-}
+//fun B1()
+//{
+//    var a = 2
+//    var P =4*a
+//    print(P)
+//
+//}
 
 
 
