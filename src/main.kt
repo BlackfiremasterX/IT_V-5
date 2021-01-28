@@ -851,7 +851,11 @@ fun B1()
 
 
 
-
+//fun integer1() {
+//    println("L (в метрах) :")
+//    var l = readLine().toString().toDouble()
+//    println(l*100)
+//}
 
 
 
