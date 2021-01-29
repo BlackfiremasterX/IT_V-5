@@ -3,7 +3,7 @@ import kotlin.math.sqrt
 
 fun main()
 {
-    print("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)\nСписок доступных задач:\nBegin12\n")
+    print("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)\nСписок доступных задач:\nBegin12\nBegin13\nBegin23\nInteder28\nFor1\n")
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
@@ -226,20 +226,21 @@ fun For1() {
 //
 //
 //ето мая точка, вы кто такие, я вас не звал, идите нахфиг) "ArtemKorol1999"
-fun Begin13 () {
+fun Begin13 ()
+{
     ("\nBegin13\nДаны два круга с общим центром и радиусами R1 и R2 Найти площади этих кругов S1 и S2, а также площадь S3 кольца\n")
-    print("Ввидите внешний радиус кольца")
+    print("Ввидите внешний радиус кольца:")
     var p = 3.14
-    var R1 = readLine()
-    print("Ввидите внутренний радиус")
-    var R2 = readLine()
-    print("площадь 1 круга")
-    var S1 = (R1.pow(2) * p)
+    var R1 = readLine()!!.toDouble()
+    print("Ввидите внутренний радиус:")
+    var R2 = readLine()!!.toDouble()
+    print("площадь 1 круга\n")
+    var S1 = R1.pow(2)*p
     print(S1)
-    print("площадь 2 круга")
-    var S2 = (R2.pow(2) * p)
-print(S2)
-print("площадь кольца")
+    print("\nплощадь 2 круга\n")
+    var S2 = R2.pow(2)*p
+    print(S2)
+    print("\nплощадь кольца\n")
     var S3 = S1-S2
 print(S3)
 
