@@ -1,4 +1,5 @@
-import kotlin.math.*
+import kotlin.math.pow
+import kotlin.math.sqrt
 
 fun main()
 {
@@ -6,6 +7,7 @@ fun main()
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
+        "b13" -> Begin13()
         "b12" -> Begin12()
 //        "b23" -> Begin23()
         "i28" -> Integer28()
@@ -51,14 +53,14 @@ fun Integer28() //Решила Гладких Марина
     println("День года: $K\nДень недели: ${days[n]}")
 }
 
-fun For1()
-{
+fun For1() {
     println("Введите целые числа K и N, большее нуля.")
-    print("K: "); val K = readLine()!!.toInt()
-    print("N: "); val N = readLine()!!.toInt()
+    print("K: ");
+    val K = readLine()!!.toInt()
+    print("N: ");
+    val N = readLine()!!.toInt()
 
-    for (i in 0..N)
-    {
+    for (i in 0..N) {
         println(K)
     }
 }
@@ -224,12 +226,26 @@ fun For1()
 //
 //
 //ето мая точка, вы кто такие, я вас не звал, идите нахфиг) "ArtemKorol1999"
-//fun Begin21 () {
-//    print("\nBegin21\nДаны координаты трех вершин треугольника: (x1, y1), (x2, y2), (x3, y3).Найти его периметр и площадь\n")
-//    print("Ввидите координаты точки 1 ")
-//    var
-//}
-//
+fun Begin13 () {
+    ("\nBegin13\nДаны два круга с общим центром и радиусами R1 и R2 Найти площади этих кругов S1 и S2, а также площадь S3 кольца\n")
+    print("Ввидите внешний радиус кольца")
+    var p = 3.14
+    var R1 = readLine()
+    print("Ввидите внутренний радиус")
+    var R2 = readLine()
+    print("площадь 1 круга")
+    var S1 = (R1.pow(2) * p)
+    print(S1)
+    print("площадь 2 круга")
+    var S2 = (R2.pow(2) * p)
+print(S2)
+print("площадь кольца")
+    var S3 = S1-S2
+print(S3)
+
+
+}
+
 
 
 
