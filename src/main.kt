@@ -9,7 +9,7 @@ fun main()
     {
         "b13" -> Begin13()
         "b12" -> Begin12()
-//       "b33" -> Begin33
+      "b33" -> Begin33()
 //        "b23" -> Begin23()
         "i28" -> Integer28()
         "f1" -> For1()
@@ -248,19 +248,18 @@ print(S3)
 fun Begin33()
 {
     print("\nBegin33\nИзвестно, что X кг конфет стоит A рублей. Определить, сколько стоит 1 кг и Y кг этих же конфет\n")
-    print("Ввидите кол-во конфет:\n")
-var X = readLine()
+    print("Ввидите кол-во кг конфет:\n")
+var X = readLine()!!.toDouble()
     print("Ввидите цену конфет:\n")
-    var A = readLine()
+    var A = readLine()!!.toDouble()
 print("Цена 1 кг:")
     var kg1 = X/A
 print(kg1)
     print("\nВвидите 2 кол-во кг конфет\n")
-    var Y = readLine()
-    print("\nЦена 2-го кг:\n")
-    var Yrub = X/A*Y
-
-
+    var Y = readLine()!!.toDouble()
+    print("Цена 2 партии конфет:\n")
+    var Yrub = kg1*Y
+print(Yrub)
 }
 
 
