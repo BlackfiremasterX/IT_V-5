@@ -7,9 +7,11 @@ fun main()
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
-        "b13" -> Begin13()
+
         "b12" -> Begin12()
-      "b33" -> Begin33()
+        "b13" -> Begin13()
+      "b15" -> Begin15()
+        "b33" -> Begin33()
 //        "b23" -> Begin23()
         "i28" -> Integer28()
         "f1" -> For1()
@@ -261,18 +263,20 @@ print(kg1)
     var Yrub = kg1*Y
 print(Yrub)
 }
-
-
-
-
-
-
-
-
-
-
-
-
+fun Begin15()
+{
+    print("\nBegin15\nДана площадь S круга. Найти его диаметр D и длину L окружности,ограничивающей этот круг\n")
+var p = 3.14
+    print("Ввидите площадь круга:")
+var S = readLine()!!.toDouble()
+print("Диаметр круга:")
+var D = 2*sqrt(S/p)
+print(D)
+    print("Длинна окружности:")
+    var R = D/2
+    var L = 2*p*R
+print(L)
+}
 
 
 
