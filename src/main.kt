@@ -9,6 +9,7 @@ fun main()
         "b12" -> Begin12()
 //        "b23" -> Begin23()
         "i28" -> Integer28()
+        "f1" -> For1()
         else -> println("Такой задачи нет!")
     }
 }
@@ -48,6 +49,18 @@ fun Integer28() //Решила Гладких Марина
 
     var n = (K + N - 1) % 7
     println("День года: $K\nДень недели: ${days[n]}")
+}
+
+fun For1()
+{
+    println("Введите целые числа K и N, большее нуля.")
+    print("K: "); val K = readLine()!!.toInt()
+    print("N: "); val N = readLine()!!.toInt()
+
+    for (i in 0..N)
+    {
+        println(K)
+    }
 }
 //
 //
