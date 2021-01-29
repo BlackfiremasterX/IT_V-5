@@ -44,7 +44,7 @@ fun Integer28() //Решила Гладких Марина
     print("Введите номер дня года: "); val K = readLine()!!.toInt()
 
     var i = (1 + N - 1) % 7
-    println("1-е января: $N\nДень недели: ${days[i]}\n")
+    println("1-е января: 1\nДень недели: ${days[i]}\n")
 
     var n = (K + N - 1) % 7
     println("День года: $K\nДень недели: ${days[n]}")
