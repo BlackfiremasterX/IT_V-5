@@ -3,12 +3,13 @@ import kotlin.math.sqrt
 
 fun main()
 {
-    print("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)\nСписок доступных задач:\nBegin12\nBegin13\nBegin23\nInteder28\nFor1\n")
+    print("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)\nСписок доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\n")
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
         "b13" -> Begin13()
         "b12" -> Begin12()
+//       "b33" -> Begin33
 //        "b23" -> Begin23()
         "i28" -> Integer28()
         "f1" -> For1()
@@ -243,28 +244,24 @@ fun Begin13 ()
     print("\nплощадь кольца\n")
     var S3 = S1-S2
 print(S3)
+}
+fun Begin33()
+{
+    print("\nBegin33\nИзвестно, что X кг конфет стоит A рублей. Определить, сколько стоит 1 кг и Y кг этих же конфет\n")
+    print("Ввидите кол-во конфет:\n")
+var X = readLine()
+    print("Ввидите цену конфет:\n")
+    var A = readLine()
+print("Цена 1 кг:")
+    var kg1 = X/A
+print(kg1)
+    print("\nВвидите 2 кол-во кг конфет\n")
+    var Y = readLine()
+    print("\nЦена 2-го кг:\n")
+    var Yrub = X/A*Y
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
