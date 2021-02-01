@@ -29,7 +29,7 @@ fun main()
 fun explorer()
 {
     println("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)")
-    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3")
+    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1")
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
@@ -48,6 +48,7 @@ fun explorer()
         "if1" -> If1()
         "if2" -> If2()
         "if3" -> If3()
+        "c1" -> Case1()
         else -> println("Такой задачи нет!")
     }
 }
@@ -76,7 +77,8 @@ fun Begin12()//Михаил Розенталь
 //
 //}
 
-fun Integer28() //Решила Гладких Марина
+// большая коробка решений Гладких Марины *_*
+fun Integer28()
 {
     val days = mapOf(1 to "Понедельник", 2 to "Вторник", 3 to "Среда", 4 to "Четверг", 5 to "Пятница", 6 to "Суббота", 0 to "Воскресенье")
 
@@ -90,7 +92,7 @@ fun Integer28() //Решила Гладких Марина
     println("День года: $K\nДень недели: ${days[n]}")
 }
 
-fun For1() // Гладких Марина
+fun For1()
 {
     println("Введите целые числа K и N, большее нуля.")
     print("K: ");
@@ -103,7 +105,7 @@ fun For1() // Гладких Марина
     }
 }
 
-fun Araray1() // Гладких Марина
+fun Araray1()
 {
     print("Введите число N, большее нуля: "); val N = readLine()!!.toInt()
     val numbers: Array<Int> = Array(N) { 0 }
@@ -115,7 +117,7 @@ fun Araray1() // Гладких Марина
     println(numbers)
 }
 
-fun If30() // Гладких Марина
+fun If30()
 {
     val n = 0
     while(n == 0)
@@ -164,7 +166,7 @@ fun If30() // Гладких Марина
     }
 }
 
-fun If29() // Гладких Марина
+fun If29()
 {
  val n = 0
     while(n == 0)
@@ -202,7 +204,7 @@ fun If29() // Гладких Марина
     }
 }
 
-fun If28() // Гладких Марина
+fun If28()
 {
     val n = 0
     while (n == 0)
@@ -233,7 +235,7 @@ fun If28() // Гладких Марина
         }
     }
 }
-fun If1() //Гладких Марина
+fun If1()
 {
     val n = 0
     while(n == 0)
@@ -262,7 +264,7 @@ fun If1() //Гладких Марина
     }
 }
 
-fun If2() // Гладких Марина
+fun If2()
 {
     val n = 0
     while(n == 0)
@@ -291,7 +293,7 @@ fun If2() // Гладких Марина
     }
 }
 
-fun If3() // Гладких Марина
+fun If3()
 {
     val n = 0
     while(n == 0)
@@ -319,6 +321,41 @@ fun If3() // Гладких Марина
         }
     }
 }
+
+fun Case1()
+{
+    val n = 0
+    while (n == 0)
+    {
+        print("Введите число от 1 до 7: "); val number = readLine()!!.toInt()
+
+        when(number)
+        {
+            1 -> println("Понедельник")
+            2 -> println("Вторник")
+            3 -> println("Среда")
+            4 -> println("Четверг")
+            5 -> println("Пятница")
+            6 -> println("Суббота")
+            7 -> println("Воскресенье")
+            else -> println("В неделе всего семь дней. Продлить выходные не получится")
+        }
+
+        println("Хотите продолжить? [да/нет]")
+        print("Ответ: "); var answer = readLine()!!.toString()
+
+        if (answer == "да" || answer == "Да" || answer == "lf" || answer == "Lf" || answer == "yes" || answer == "Yes")
+            continue
+        else if (answer == "нет" || answer == "Нет"  || answer == "Ytn" || answer == "ytn"  || answer == "No" || answer == "no")
+            break
+        else
+        {
+            println("Программа не может распознать ваш ответ. Выполнятеся аварийный выход")
+            break
+        }
+    }
+}
+// всё ещё коробка -_-
 //
 //
 //
