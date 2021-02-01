@@ -10,7 +10,7 @@ fun main()
         explorer()
 
         println("Хотите ли вы продолжить тестирование задач? [да/нет]")
-        print("Ответ: "); val answer = readLine()!!.toString()
+        print("Ответ: "); var answer = readLine()!!.toString()
 
         if (answer == "да" || answer == "Да" || answer == "lf" || answer == "Lf" || answer == "yes" || answer == "Yes")
             continue
@@ -22,17 +22,14 @@ fun main()
             break
         }
     }
-
 }
 
 
 
 fun explorer()
 {
-
-
-
-    print("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)\nСписок доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\n")
+    println("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)")
+    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1")
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
@@ -48,9 +45,9 @@ fun explorer()
         "if30" -> If30()
         "if29" -> If29()
         "if28" -> If28()
+        "if1" -> If1()
         else -> println("Такой задачи нет!")
     }
-
 }
 
 
@@ -151,7 +148,7 @@ fun If30() // Гладких Марина
         }
 
         println("Хотите продолжить? [да/нет]")
-        print("Ответ: "); val answer = readLine()!!.toString()
+        print("Ответ: "); var answer = readLine()!!.toString()
 
         if (answer == "да" || answer == "Да" || answer == "lf" || answer == "Lf" || answer == "yes" || answer == "Yes")
             continue
@@ -189,7 +186,7 @@ fun If29() // Гладких Марина
             println("Число $number является нулевым")
 
         println("Хотите продолжить? [да/нет]")
-        print("Ответ: "); val answer = readLine()!!.toString()
+        print("Ответ: "); var answer = readLine()!!.toString()
 
         if (answer == "да" || answer == "Да" || answer == "lf" || answer == "Lf" || answer == "yes" || answer == "Yes")
             continue
@@ -221,7 +218,35 @@ fun If28() // Гладких Марина
             println("$number год не является високосным. В нем 365 дней")
 
         println("Хотите продолжить? [да/нет]")
-        print("Ответ: "); val answer = readLine()!!.toString()
+        print("Ответ: "); var answer = readLine()!!.toString()
+
+        if (answer == "да" || answer == "Да" || answer == "lf" || answer == "Lf" || answer == "yes" || answer == "Yes")
+            continue
+        else if (answer == "нет" || answer == "Нет"  || answer == "Ytn" || answer == "ytn"  || answer == "No" || answer == "no")
+            break
+        else
+        {
+            println("Программа не может распознать ваш ответ. Выполнятеся аварийный выход")
+            break
+        }
+    }
+}
+fun If1() //Гладких Марина
+{
+    val n = 0
+    while(n == 0)
+    {
+        print("Введите целое число: "); var number = readLine()!!.toInt()
+
+        if(number > 0)
+            println("Число $number положительно.\nПрибавляем к нему 1\nРезультат: ${number + 1}")
+        else if(number < 0)
+            println("Число $number отрицательно.\nНикаких действий не выполняется\nРезультат: $number")
+        else
+            println("Число $number является нулём.")
+
+        println("Хотите продолжить? [да/нет]")
+        print("Ответ: "); var answer = readLine()!!.toString()
 
         if (answer == "да" || answer == "Да" || answer == "lf" || answer == "Lf" || answer == "yes" || answer == "Yes")
             continue
