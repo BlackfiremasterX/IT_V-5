@@ -3,7 +3,7 @@ import kotlin.math.sqrt
 
 fun main()
 {
-    print("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)\nСписок доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\n")
+    print("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)\nСписок доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\n")
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
@@ -16,8 +16,9 @@ fun main()
         "i28" -> Integer28()
         "f1" -> For1()
         "a1" -> Araray1()
-        "i30" -> If30()
-        "i29" -> If29()
+        "if30" -> If30()
+        "if29" -> If29()
+        "if28" -> If28()
         else -> println("Такой задачи нет!")
     }
 }
@@ -155,6 +156,38 @@ fun If29() // Гладких Марина
         }
         else if(number == 0)
             println("Число $number является нулевым")
+
+        println("Хотите продолжить? [да/нет]")
+        print("Ответ: "); val answer = readLine()!!.toString()
+
+        if (answer == "да" || answer == "Да" || answer == "If" || answer == "if" || answer == "yes" || answer == "Yes")
+            continue
+        else if (answer == "нет" || answer == "Нет"  || answer == "Ytn" || answer == "ytn"  || answer == "No" || answer == "no")
+            break
+        else
+        {
+            println("Программа не может распознать ваш ответ. Выполнятеся аварийный выход")
+            break
+        }
+    }
+}
+
+fun If28() // Гладких Марина
+{
+    val n = 0
+    while (n == 0)
+    {
+        print("Введите номер года: "); val number = readLine()!!.toInt()
+
+        if(number % 4 == 0)
+        {
+            if(number % 100 == 0 && number % 400 != 0)
+                println("$number год не является високосным. В нем 365 дней")
+            else
+                println("$number год является високосным. В нем 366 дней")
+        }
+        else
+            println("$number год не является високосным. В нем 365 дней")
 
         println("Хотите продолжить? [да/нет]")
         print("Ответ: "); val answer = readLine()!!.toString()
