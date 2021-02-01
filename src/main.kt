@@ -29,7 +29,7 @@ fun main()
 fun explorer()
 {
     println("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)")
-    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\n")
+    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3")
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
@@ -47,6 +47,7 @@ fun explorer()
         "if28" -> If28()
         "if1" -> If1()
         "if2" -> If2()
+        "if3" -> If3()
         else -> println("Такой задачи нет!")
     }
 }
@@ -274,6 +275,35 @@ fun If2() // Гладких Марина
             println("Число $number отрицательно.\nВычитаем из него 2\nРезультат: ${number - 2}")
         else
             println("Число $number является нулём.")
+
+        println("Хотите продолжить? [да/нет]")
+        print("Ответ: "); var answer = readLine()!!.toString()
+
+        if (answer == "да" || answer == "Да" || answer == "lf" || answer == "Lf" || answer == "yes" || answer == "Yes")
+            continue
+        else if (answer == "нет" || answer == "Нет"  || answer == "Ytn" || answer == "ytn"  || answer == "No" || answer == "no")
+            break
+        else
+        {
+            println("Программа не может распознать ваш ответ. Выполнятеся аварийный выход")
+            break
+        }
+    }
+}
+
+fun If3() // Гладких Марина
+{
+    val n = 0
+    while(n == 0)
+    {
+        print("Введите целое число: "); var number = readLine()!!.toInt()
+
+        if(number > 0)
+            println("Число $number положительно.\nПрибавляем к нему 1\nРезультат: ${number + 1}")
+        else if(number < 0)
+            println("Число $number отрицательно.\nВычитаем из него 2\nРезультат: ${number - 2}")
+        else
+            println("Число $number является нулём.\nЗаменяем его на 10\nРезультат: 10")
 
         println("Хотите продолжить? [да/нет]")
         print("Ответ: "); var answer = readLine()!!.toString()
