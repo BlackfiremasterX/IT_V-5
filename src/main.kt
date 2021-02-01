@@ -3,18 +3,19 @@ import kotlin.math.sqrt
 
 fun main()
 {
-    print("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)\nСписок доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\n")
+    print("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)\nСписок доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1")
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
 
         "b12" -> Begin12()
         "b13" -> Begin13()
-      "b15" -> Begin15()
+        "b15" -> Begin15()
         "b33" -> Begin33()
 //        "b23" -> Begin23()
         "i28" -> Integer28()
         "f1" -> For1()
+        "a1" -> Araray1()
         else -> println("Такой задачи нет!")
     }
 }
@@ -56,7 +57,8 @@ fun Integer28() //Решила Гладких Марина
     println("День года: $K\nДень недели: ${days[n]}")
 }
 
-fun For1() {
+fun For1()
+{
     println("Введите целые числа K и N, большее нуля.")
     print("K: ");
     val K = readLine()!!.toInt()
@@ -66,6 +68,18 @@ fun For1() {
     for (i in 0..N) {
         println(K)
     }
+}
+
+fun Araray1() // Гладких Марина
+{
+    print("Введите число N, большее нуля: "); val N = readLine()!!.toInt()
+    val numbers: Array<Int> = Array(N) { 0 }
+    for(i in 0..N)
+    {
+        numbers[i] = i * 2 + 1
+
+    }
+    println(numbers)
 }
 //
 //
