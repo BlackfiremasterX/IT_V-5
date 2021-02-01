@@ -3,7 +3,7 @@ import kotlin.math.sqrt
 
 fun main()
 {
-    print("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)\nСписок доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30")
+    print("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)\nСписок доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\n")
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
@@ -17,6 +17,7 @@ fun main()
         "f1" -> For1()
         "a1" -> Araray1()
         "i30" -> If30()
+        "i29" -> If29()
         else -> println("Такой задачи нет!")
     }
 }
@@ -116,6 +117,44 @@ fun If30() // Гладких Марина
             println("Внимательнее читайте условие")
             break
         }
+
+        println("Хотите продолжить? [да/нет]")
+        print("Ответ: "); val answer = readLine()!!.toString()
+
+        if (answer == "да" || answer == "Да" || answer == "If" || answer == "if" || answer == "yes" || answer == "Yes")
+            continue
+        else if (answer == "нет" || answer == "Нет"  || answer == "Ytn" || answer == "ytn"  || answer == "No" || answer == "no")
+            break
+        else
+        {
+            println("Программа не может распознать ваш ответ. Выполнятеся аварийный выход")
+            break
+        }
+    }
+}
+
+fun If29() // Гладких Марина
+{
+ val n = 0
+    while(n == 0)
+    {
+        print("Введите целое число: "); val number = readLine()!!.toInt()
+        if(number < 0)
+        {
+            if (number % 2 == 0)
+                println("Число $number является чётным отрицательным")
+            else
+                println("Число $number является нечётным отрицательным")
+        }
+        else if(number > 0)
+        {
+            if (number % 2 == 0)
+                println("Число $number является чётным положительным")
+            else
+                println("Число $number является нечётным положительным")
+        }
+        else if(number == 0)
+            println("Число $number является нулевым")
 
         println("Хотите продолжить? [да/нет]")
         print("Ответ: "); val answer = readLine()!!.toString()
