@@ -1,8 +1,37 @@
 import kotlin.math.pow
 import kotlin.math.sqrt
 
+
+
 fun main()
 {
+    val n =0
+    while(n == 0){
+        explorer()
+
+        println("Хотите ли вы продолжить тестирование задач? [да/нет]")
+        print("Ответ: "); val answer = readLine()!!.toString()
+
+        if (answer == "да" || answer == "Да" || answer == "lf" || answer == "Lf" || answer == "yes" || answer == "Yes")
+            continue
+        else if (answer == "нет" || answer == "Нет"  || answer == "Ytn" || answer == "ytn"  || answer == "No" || answer == "no")
+            break
+        else
+        {
+            println("Программа не может распознать ваш ответ. Выполнятеся аварийный выход")
+            break
+        }
+    }
+
+}
+
+
+
+fun explorer()
+{
+
+
+
     print("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)\nСписок доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\n")
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
@@ -21,7 +50,9 @@ fun main()
         "if28" -> If28()
         else -> println("Такой задачи нет!")
     }
+
 }
+
 
 fun Begin12()//Михаил Розенталь
 {
@@ -122,7 +153,7 @@ fun If30() // Гладких Марина
         println("Хотите продолжить? [да/нет]")
         print("Ответ: "); val answer = readLine()!!.toString()
 
-        if (answer == "да" || answer == "Да" || answer == "If" || answer == "if" || answer == "yes" || answer == "Yes")
+        if (answer == "да" || answer == "Да" || answer == "lf" || answer == "Lf" || answer == "yes" || answer == "Yes")
             continue
         else if (answer == "нет" || answer == "Нет"  || answer == "Ytn" || answer == "ytn"  || answer == "No" || answer == "no")
             break
@@ -160,7 +191,7 @@ fun If29() // Гладких Марина
         println("Хотите продолжить? [да/нет]")
         print("Ответ: "); val answer = readLine()!!.toString()
 
-        if (answer == "да" || answer == "Да" || answer == "If" || answer == "if" || answer == "yes" || answer == "Yes")
+        if (answer == "да" || answer == "Да" || answer == "lf" || answer == "Lf" || answer == "yes" || answer == "Yes")
             continue
         else if (answer == "нет" || answer == "Нет"  || answer == "Ytn" || answer == "ytn"  || answer == "No" || answer == "no")
             break
@@ -192,7 +223,7 @@ fun If28() // Гладких Марина
         println("Хотите продолжить? [да/нет]")
         print("Ответ: "); val answer = readLine()!!.toString()
 
-        if (answer == "да" || answer == "Да" || answer == "If" || answer == "if" || answer == "yes" || answer == "Yes")
+        if (answer == "да" || answer == "Да" || answer == "lf" || answer == "Lf" || answer == "yes" || answer == "Yes")
             continue
         else if (answer == "нет" || answer == "Нет"  || answer == "Ytn" || answer == "ytn"  || answer == "No" || answer == "no")
             break
