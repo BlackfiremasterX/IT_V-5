@@ -593,30 +593,30 @@ print(L)
 //
 ////рита понасенко
 //
-//////integer 1
-////  fun main() {
-////    var a = readLine()!!.toInt()
-////    var b:= Int
-////    b = a / 100
-////    print(b)
-////}
-//////fffff
-////// integer 19
-////    fun main(){
-////        var N = readLine()!!.toInt()
-////        var M: Int
-////        M = N/60
-////        print(M)
-////
-////    }
-////// begin 2
-////    fun main(){
-////        var a = readLine()!!.toInt()
-////        var S: Int
-////        S = a*a
-////        print(S)
-////    }
+
+  fun integer1() {
+      print("Введите расстояние в сантиметрах")
+    var a = readLine()!!.toDouble()
+    var b = a/100
+    print("Количество полных метров= $b")
+  }
+
+
+    fun begin2(){
+        print("Введите сторону квадрата:")
+        var a = readLine()!!.toDouble()
+        var S = a*a
+        print("Площадь квадрата равна: $S")
+    }
 //
+    fun begin25() {
+        print("Введите значение переменной х:")
+        var x = readLine()!!.toDouble()
+        var y = 3*x.pow(6)-6*x.pow(2)-7
+        print("Значение выражения равно : $y")
+
+
+    }
 //
 //
 //
