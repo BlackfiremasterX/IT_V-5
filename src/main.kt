@@ -617,7 +617,13 @@ print(L)
 
 
     }
-//
+    fun begin9 (){
+        print("Введите два неотрицательных числа:")
+        var a = readLine()!!.toDouble()
+        var b = readLine()!!.toDouble()
+        var c = sqrt(a*b)
+        print("Среднее геометрическое этих двух чисел равно: $c")
+    }
 //
 //
 //
