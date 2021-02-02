@@ -28,7 +28,10 @@ fun explorer()
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
-
+        "b1" ->Begin1()
+        "b2" ->Begin2()
+        "b3" ->Begin3()
+        "b4" ->Begin4()
         "b12" -> Begin12()
         "b13" -> Begin13()
         "b15" -> Begin15()
@@ -49,6 +52,48 @@ fun explorer()
     }
 }
 //
+
+
+
+fun Begin1()
+{
+   var a = 5
+   var P = 4*a
+   println(P)
+}
+
+
+fun Begin2()
+{
+    var a = 100
+    var S = a*a
+    println(S)
+}
+
+
+fun Begin3()
+{
+    var a = 100
+    var b = 400
+    var S = a*b
+    var P = 2*(a+b)
+    println(S)
+    println(P)
+}
+
+
+fun Begin4() {
+    var d = 100
+    var p = 3.14.
+    var L = p * d
+    println(L)
+}
+
+
+
+
+
+
 
 fun Begin12()//Михаил Розенталь
 {
