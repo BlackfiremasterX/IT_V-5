@@ -24,7 +24,7 @@ fun main()
 fun explorer()
 {
     println("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)")
-    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1\nInteger11\n")
+    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1\nInteger11\nInteger10\n")
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
@@ -34,6 +34,7 @@ fun explorer()
         "b15" -> Begin15()
         "b33" -> Begin33()
 //        "b23" -> Begin23()
+        "i10" -> Integer10()
         "i11"-> Integer11()
         "i28" -> Integer28()
         "f1" -> For1()
@@ -88,6 +89,25 @@ fun Integer11()//Решила межгалакическая коллегия г
 
 }
 
+fun Integer10()
+{
+    print("Введите трёхзначное число :")
+    var ch = readLine()!!.toInt()
+    var ed = ch%100%10
+    println("Единицы : $ed")
+    var des = ch%100/10
+    println("Десятки : $des")
+
+
+
+
+
+
+
+
+
+
+}
 
 // большая коробка решений Гладких Марины *_*
 fun Integer28()
