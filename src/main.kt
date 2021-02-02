@@ -24,7 +24,7 @@ fun main()
 fun explorer()
 {
     println("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)")
-    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1\nInteger11\n")
+    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1\nInteger11\nInteger19\nInteger20\n")
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
@@ -45,6 +45,8 @@ fun explorer()
         "if2" -> If2()
         "if3" -> If3()
         "c1" -> Case1()
+        "i19" -> Integer19()
+        "i20" -> Integer20()
         else -> println("Такой задачи нет!")
     }
 }
@@ -469,16 +471,26 @@ fun Begin15()
     print("Ввидите площадь круга:")
     var S = readLine()!!.toDouble()
     print("Диаметр круга:")
-    var D = 2*sqrt(S/p)
+    var D = 2 * sqrt(S / p)
     print(D)
     print("Длинна окружности:")
     var R = D/2
     var L = 2*p*R
-    print(L)
 }
-
-
-
+fun Integer19()
+{
+print("Integer19\n С начала суток прошло N секунд (N — целое). Найти количество полных минут, прошедших с начала суток\n")
+print("Ввидите кол-во сек.\n")
+var s = readLine()!!.toInt()
+print("Кол-во полных минут:\n${s/60}\n")
+}
+fun Integer20()
+{
+    print("Integer20\n С начала суток прошло N секунд (N — целое). Найти количество полных часов, прошедших с начала суток\n")
+    print("Ввидите кол-во сек.\n")
+    var s = readLine()!!.toInt()
+    print("Кол-во полных часов:\n${s/360}\n")
+}
 
 
 
