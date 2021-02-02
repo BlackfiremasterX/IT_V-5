@@ -110,6 +110,17 @@ fun Begin6()
     println(S)
 }
 
+
+
+
+
+
+
+
+
+
+
+
 fun begin6() { //решил Лев Горобец
     println("a: ")
     var a = readLine().toString().toDouble()
@@ -122,18 +133,6 @@ fun begin6() { //решил Лев Горобец
     println("V = $V")
     println("S = $S")
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
