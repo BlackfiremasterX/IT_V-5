@@ -34,6 +34,7 @@ fun explorer()
         "b15" -> Begin15()
         "b33" -> Begin33()
 //        "b23" -> Begin23()
+        "i11"-> Integer11()
         "i28" -> Integer28()
         "f1" -> For1()
         "a1" -> Araray1()
@@ -72,6 +73,22 @@ fun Begin12()//Михаил Розенталь
 //
 //}
 
+fun Integer11()//Решила межгалакическая коллегия группы итв-5
+{
+    print("Integer11.\nДано трехзначное число. Найти сумму и произведение его цифр.\n")
+    print("Введите число от -999 до 999: ")
+    var number = readLine()!!.toInt()
+    println("Сотни: ${number/100}")
+    println("Десятки: ${number%100/10}")
+    println("Единицы: ${number%100%10}")
+    println("Сумма: ${number/100+number%100/10+number%100%10}")
+    println("Произведение: ${number/100*number%100/10*number%100%10}")
+
+
+
+}
+
+
 // большая коробка решений Гладких Марины *_*
 fun Integer28()
 {
@@ -86,7 +103,6 @@ fun Integer28()
     var n = (K + N - 1) % 7
     println("День года: $K\nДень недели: ${days[n]}")
 }
-
 fun For1()
 {
     println("Введите целые числа K и N, большее нуля.")
@@ -99,7 +115,6 @@ fun For1()
         println(K)
     }
 }
-
 fun Araray1()
 {
     print("Введите число N, большее нуля: "); val N = readLine()!!.toInt()
@@ -111,7 +126,6 @@ fun Araray1()
     }
     println(numbers)
 }
-
 fun If30()
 {
     val n = 0
@@ -160,7 +174,6 @@ fun If30()
         }
     }
 }
-
 fun If29()
 {
     val n = 0
@@ -198,7 +211,6 @@ fun If29()
         }
     }
 }
-
 fun If28()
 {
     val n = 0
@@ -258,7 +270,6 @@ fun If1()
         }
     }
 }
-
 fun If2()
 {
     val n = 0
@@ -287,7 +298,6 @@ fun If2()
         }
     }
 }
-
 fun If3()
 {
     val n = 0
@@ -316,7 +326,6 @@ fun If3()
         }
     }
 }
-
 fun Case1()
 {
     val n = 0
