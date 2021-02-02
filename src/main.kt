@@ -24,7 +24,7 @@ fun main()
 fun explorer()
 {
     println("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)")
-    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1\nInteger10 ")
+    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1\nInteger11\n")
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
@@ -34,7 +34,6 @@ fun explorer()
         "b15" -> Begin15()
         "b33" -> Begin33()
 //        "b23" -> Begin23()
-        "i10"-> Integer10()
         "i11"-> Integer11()
         "i28" -> Integer28()
         "f1" -> For1()
@@ -49,7 +48,7 @@ fun explorer()
         else -> println("Такой задачи нет!")
     }
 }
-//
+///
 
 fun Begin12()//Михаил Розенталь
 {
@@ -66,25 +65,8 @@ fun Begin12()//Михаил Розенталь
     print("Периметр = $P \n Периметр(pow) = $Pcpow \n")
 }
 
-fun Integer10()
-{
-    print("Введите трёхзначное число : ")
-    var ch = readLine()!!.toInt()
-    var ed = ch%100%10
-    println("Единицы трёзначного числа : $ed")
-    var des = ch%100/10
-    println("Десятки трёхзначного числа : $des")
 
 
-
-
-
-
-
-
-
-
-}
 //fun Begin23()
 //{
 //
@@ -378,19 +360,6 @@ fun Case1()
     }
 }
 // всё ещё коробка -_-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 ///*
 //fun main() {
 //    var truePassword = "123456"
@@ -448,45 +417,7 @@ fun Case1()
 ////121233331212
 ////лол кек чебурек
 ////маинкрафт моя жизнь
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 ////дима таранов     1
 //
 ////00000000
@@ -495,50 +426,7 @@ fun Case1()
 ////0 0000 0
 ////00000000
 ////маинкрафт
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 //ето мая точка, вы кто такие, я вас не звал, идите нахфиг) "ArtemKorol1999"
 fun Begin13 ()
 {
@@ -588,6 +476,35 @@ fun Begin15()
     var L = 2*p*R
     print(L)
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1166,9 +1083,18 @@ fun begin9 (){
 ////    var b = readLine().toString().toDouble()
 ////    println(sqrt(a*b))
 ////}
-fun begin10() {
-
+/*fun int11() {
+    println("Дано трехзначное число. Найти сумму и произведение его цифр.")
+    println("Введите число: ")
+    var num = readLine().toString().toDouble()
+    var num_sot = num/100
+    var num_des = num%100/10
+    var num_edin = num%100%10/1
+    println("Сумма: ${num_sot+num_des+num_edin}")
+    println("Произведение: ${num_sot+num_des+num_edin}")
 }
+
+ */
 //////просто строчки (конец)
 //
 //
