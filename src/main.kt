@@ -605,6 +605,7 @@ fun Integer20()
     var s = readLine()!!.toInt()
     print("Полное кол-во часов:${s/360}")
 }
+
 fun integer1() {
     print("Введите расстояние в сантиметрах")
     var a = readLine()!!.toDouble()
