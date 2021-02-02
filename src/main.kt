@@ -36,7 +36,8 @@ fun explorer()
         "b12" -> Begin12()
         "b13" -> Begin13()
         "b15" -> Begin15()
-        "if4" -> If4()
+        "i4" -> If4()
+        "i8" -> if8()
         "b33" -> Begin33()
 //        "b23" -> Begin23()
         "i11"-> Integer11()
@@ -247,6 +248,24 @@ fun If4() {
         println("Большее число: $a")
     } else if (b < a) {
         println("Большее число: $b")
+    } else if (a == b) {
+        println("Оба числа равны.")
+    } else {
+        println("Программа тебя не понимает.")
+    }
+}
+fun if8() {
+    println("If8.\nДаны два числа. Вывести вначале большее, а затем меньшее из них.")
+    println("Первое число: ")
+    var a = readLine().toString().toDouble()
+    println("Второе число: ")
+    var b = readLine().toString().toDouble()
+    if (a > b) {
+        println("Большее число: $a")
+        println("Меньшее число: $b")
+    } else if (b < a) {
+        println("Большее число: $b")
+        println("Меньшее число: $a")
     } else if (a == b) {
         println("Оба числа равны.")
     } else {
@@ -1548,7 +1567,24 @@ fun begin9 (){
 
 
 
-
+fun If8() {
+    println("If8.\nДаны два числа. Вывести вначале большее, а затем меньшее из них.")
+    println("Первое число: ")
+    var a = readLine().toString().toDouble()
+    println("Второе число: ")
+    var b = readLine().toString().toDouble()
+    if (a > b) {
+        println("Большее число: $a")
+        println("Меньшее число: $b")
+    } else if (b < a) {
+        println("Большее число: $b")
+        println("Меньшее число: $a")
+    } else if (a == b) {
+        println("Оба числа равны.")
+    } else {
+        println("Программа тебя не понимает.")
+    }
+}
 
 
 
