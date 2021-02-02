@@ -28,11 +28,16 @@ fun explorer()
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
-
+        "b1" ->Begin1()
+        "b2" ->Begin2()
+        "b3" ->Begin3()
+        "b4" ->Begin4()
+        "b5" ->Begin5()
         "b12" -> Begin12()
         "b13" -> Begin13()
         "b15" -> Begin15()
-        "if4" -> If4()
+        "i4" -> If4()
+        "i8" -> if8()
         "b33" -> Begin33()
 //        "b23" -> Begin23()
         "i11"-> Integer11()
@@ -50,6 +55,64 @@ fun explorer()
     }
 }
 //
+
+
+
+fun Begin1()
+{
+   var a = 5
+   var P = 4*a
+   println(P)
+}
+
+
+fun Begin2()
+{
+    var a = 100
+    var S = a*a
+    println(S)
+}
+
+
+fun Begin3()
+{
+    var a = 100
+    var b = 400
+    var S = a*b
+    var P = 2*(a+b)
+    println(S)
+    println(P)
+}
+
+
+fun Begin4()
+{
+    var d = 100
+    var p = 3.14
+    var L = p * d
+    println(L)
+}
+
+fun Begin5()
+{
+    var a = 100
+    var V =a*a*a
+    var S = 6*a*a
+    println(V)
+    println(S)
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 fun Begin12()//Михаил Розенталь
 {
@@ -185,6 +248,24 @@ fun If4() {
         println("Большее число: $a")
     } else if (b < a) {
         println("Большее число: $b")
+    } else if (a == b) {
+        println("Оба числа равны.")
+    } else {
+        println("Программа тебя не понимает.")
+    }
+}
+fun if8() {
+    println("If8.\nДаны два числа. Вывести вначале большее, а затем меньшее из них.")
+    println("Первое число: ")
+    var a = readLine().toString().toDouble()
+    println("Второе число: ")
+    var b = readLine().toString().toDouble()
+    if (a > b) {
+        println("Большее число: $a")
+        println("Меньшее число: $b")
+    } else if (b < a) {
+        println("Большее число: $b")
+        println("Меньшее число: $a")
     } else if (a == b) {
         println("Оба числа равны.")
     } else {
@@ -1486,7 +1567,24 @@ fun begin9 (){
 
 
 
-
+fun If8() {
+    println("If8.\nДаны два числа. Вывести вначале большее, а затем меньшее из них.")
+    println("Первое число: ")
+    var a = readLine().toString().toDouble()
+    println("Второе число: ")
+    var b = readLine().toString().toDouble()
+    if (a > b) {
+        println("Большее число: $a")
+        println("Меньшее число: $b")
+    } else if (b < a) {
+        println("Большее число: $b")
+        println("Меньшее число: $a")
+    } else if (a == b) {
+        println("Оба числа равны.")
+    } else {
+        println("Программа тебя не понимает.")
+    }
+}
 
 
 
