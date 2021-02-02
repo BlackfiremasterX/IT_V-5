@@ -84,7 +84,7 @@ fun Begin3()
 
 fun Begin4() {
     var d = 100
-    var p = 3.14.
+    var p = 3.14
     var L = p * d
     println(L)
 }
