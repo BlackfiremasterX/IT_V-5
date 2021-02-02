@@ -24,7 +24,7 @@ fun main()
 fun explorer()
 {
     println("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)")
-    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1\nInteger10")
+    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1\nInteger19\nInteger20\n")
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
@@ -33,7 +33,7 @@ fun explorer()
         "b3" ->Begin3()
         "b4" ->Begin4()
         "b5" ->Begin5()
-        "b6" ->Begin6()
+        "b6" ->begin6()
         "b12" -> Begin12()
         "b13" -> Begin13()
         "b15" -> Begin15()
@@ -43,7 +43,6 @@ fun explorer()
 //        "b23" -> Begin23()
         "i7"-> Interger7()
         "i9"-> Interger9()
-        "i10"-> Integer10()
         "i11"-> Integer11()
         "i28" -> Integer28()
         "f1" -> For1()
@@ -54,6 +53,8 @@ fun explorer()
         "if1" -> If1()
         "if2" -> If2()
         "if3" -> If3()
+        "i19" -> Integer19()
+        "i20" -> Integer20()
         "c1" -> Case1()
         else -> println("Такой задачи нет!")
     }
@@ -109,8 +110,18 @@ fun Begin6()
     println(S)
 }
 
-
-
+fun begin6() {
+    println("a: ")
+    var a = readLine().toString().toDouble()
+    println("b: ")
+    var b = readLine().toString().toDouble()
+    println("h: ")
+    var h = readLine().toString().toDouble()
+    var V = a*b*h
+    var S = 2*(a*b+h*b+a*h)
+    println("V = $V")
+    println("S = $S")
+}
 
 
 
@@ -176,17 +187,6 @@ fun Interger9()// Снова Ожогина Танюшка лол!!1!!!!1!
     var number = readLine()!!.toInt()
     println("Сотни: ${number/100}")
 }
-
-fun Integer10() {
-    print("Введите трёхзначное число :")
-    var ch = readLine()!!.toInt()
-    var ed = ch % 100 % 10
-    println("Единицы: $ed")
-    var des = ch % 100 / 10
-    println("Десятки : $des")
-
-}
-
 // большая коробка решений Гладких Марины *_*
 fun Integer28()
 {
@@ -596,6 +596,19 @@ fun Begin15()
     var L = 2*p*R
     print(L)
 }
+fun Integer19()
+{
+    print("Integer19\nС начала суток прошло N секунд (N — целое). Найти количество полных минут, прошедших с начала суток\nВвидите кол-во сек.")
+    var s = readLine()!!.toInt()
+    print("Полное кол-во минут:${s/60}")
+}
+fun Integer20()
+{
+    print("Integer20\nС начала суток прошло N секунд (N — целое). Найти количество полных часов, прошедших с начала суток\nВвидите кол-во сек.")
+    var s = readLine()!!.toInt()
+    print("Полное кол-во часов:${s/360}")
+}
+
 fun integer1() {
     print("Введите расстояние в сантиметрах")
     var a = readLine()!!.toDouble()
