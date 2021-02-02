@@ -40,6 +40,8 @@ fun explorer()
         "i8" -> if8()
         "b33" -> Begin33()
 //        "b23" -> Begin23()
+        "i7"-> Interger7()
+        "i9"-> Interger9()
         "i11"-> Integer11()
         "i28" -> Integer28()
         "f1" -> For1()
@@ -123,6 +125,26 @@ fun If30_1()
 }
 
 
+fun Interger7()//Решила Ожогина Танюшка!11!!!11
+{
+    print("Integer7.\n Дано дыухзначное число. Найтри сумму и произведение его цифр.\n")
+    print("Введите число от -99 до 99: ")
+    var number = readLine()!!.toInt()
+    println("Десятки: ${number/10}")
+    println("${number%10}")
+    println("Сумма: ${number/10+number%10}")
+    println("Произведение: ${number/10*number%10}")
+
+
+
+}
+fun Interger9()// Снова Ожогина Танюшка лол!!1!!!!1!
+{
+    print("Integer9.\n Дано трёхзначное число. Используя одну операцию деления нацело, вывести первую цифру данного числа(сотни)\n")
+    print("Введите число от -999 до 999: ")
+    var number = readLine()!!.toInt()
+    println("Сотни: ${number/100}")
+}
 // большая коробка решений Гладких Марины *_*
 fun Integer28()
 {
