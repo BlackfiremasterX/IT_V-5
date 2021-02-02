@@ -33,6 +33,7 @@ fun explorer()
         "b3" ->Begin3()
         "b4" ->Begin4()
         "b5" ->Begin5()
+        "b6" ->begin6()
         "b12" -> Begin12()
         "b13" -> Begin13()
         "b15" -> Begin15()
@@ -95,7 +96,29 @@ fun Begin5()
     println(S)
 }
 
+fun Begin6()
+{
+    var a = 100
+    var b = 555
+    var c = 222
+    var V = a*b*c
+    var S = 2*(a*b+b*c+a*c)
+    println(V)
+    println(S)
+}
 
+fun begin6() {
+    println("a: ")
+    var a = readLine().toString().toDouble()
+    println("b: ")
+    var b = readLine().toString().toDouble()
+    println("h: ")
+    var h = readLine().toString().toDouble()
+    var V = a*b*h
+    var S = 2*(a*b+h*b+a*h)
+    println("V = $V")
+    println("S = $S")
+}
 
 
 
