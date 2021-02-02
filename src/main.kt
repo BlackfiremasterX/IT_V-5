@@ -32,6 +32,7 @@ fun explorer()
         "b12" -> Begin12()
         "b13" -> Begin13()
         "b15" -> Begin15()
+        "if4" -> if4()
         "b33" -> Begin33()
 //        "b23" -> Begin23()
         "i11"-> Integer11()
@@ -1465,3 +1466,73 @@ fun begin9 (){
 //
 //
 //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fun if4() {
+    println("If6.\n Даны два числа. Вывести большее из них.")
+    println("Первое число: ")
+    var a = readLine().toString().toDouble()
+    println("Второе число: ")
+    var b = readLine().toString().toDouble()
+    if (a > b) {
+        println("Большее число: $a")
+    } else if (b < a) {
+        println("Большее число: $b")
+    } else if (a == b) {
+        println("Оба числа равны.")
+    } else {
+        println("Программа тебя не понимает.")
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
