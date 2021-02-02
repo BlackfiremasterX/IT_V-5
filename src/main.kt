@@ -110,7 +110,7 @@ fun Begin6()
     println(S)
 }
 
-fun begin6() {
+fun begin6() { //решил Лев Горобец
     println("a: ")
     var a = readLine().toString().toDouble()
     println("b: ")
@@ -272,7 +272,7 @@ fun If30()
         }
     }
 }
-fun If4()
+fun If4() //решил Лев Горобец
 {
     println("If6.\n Даны два числа. Вывести большее из них.")
     println("Первое число: ")
@@ -289,7 +289,7 @@ fun If4()
         println("Программа тебя не понимает.")
     }
 }
-fun if8()
+fun if8() //решил Лев Горобец
 {
     println("If8.\nДаны два числа. Вывести вначале большее, а затем меньшее из них.")
     println("Первое число: ")
