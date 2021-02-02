@@ -1148,7 +1148,7 @@ fun begin9 (){
 ////    var b = readLine().toString().toDouble()
 ////    println(sqrt(a*b))
 ////}
-fun int11() {
+/*fun int11() {
     println("Дано трехзначное число. Найти сумму и произведение его цифр.")
     println("Введите число: ")
     var num = readLine().toString().toDouble()
@@ -1158,6 +1158,8 @@ fun int11() {
     println("Сумма: ${num_sot+num_des+num_edin}")
     println("Произведение: ${num_sot+num_des+num_edin}")
 }
+
+ */
 //////просто строчки (конец)
 //
 //
