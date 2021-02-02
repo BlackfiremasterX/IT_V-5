@@ -24,7 +24,7 @@ fun main()
 fun explorer()
 {
     println("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)")
-    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1\nInteger11\nInteger19\nInteger20\n")
+    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1\n")
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
@@ -32,6 +32,7 @@ fun explorer()
         "b12" -> Begin12()
         "b13" -> Begin13()
         "b15" -> Begin15()
+        "if4" -> If4()
         "b33" -> Begin33()
 //        "b23" -> Begin23()
         "i11"-> Integer11()
@@ -45,8 +46,6 @@ fun explorer()
         "if2" -> If2()
         "if3" -> If3()
         "c1" -> Case1()
-        "i19" -> Integer19()
-        "i20" -> Integer20()
         else -> println("Такой задачи нет!")
     }
 }
@@ -176,6 +175,23 @@ fun If30()
         }
     }
 }
+fun If4() {
+    println("If6.\n Даны два числа. Вывести большее из них.")
+    println("Первое число: ")
+    var a = readLine().toString().toDouble()
+    println("Второе число: ")
+    var b = readLine().toString().toDouble()
+    if (a > b) {
+        println("Большее число: $a")
+    } else if (b < a) {
+        println("Большее число: $b")
+    } else if (a == b) {
+        println("Оба числа равны.")
+    } else {
+        println("Программа тебя не понимает.")
+    }
+}
+
 fun If29()
 {
     val n = 0
@@ -362,6 +378,19 @@ fun Case1()
     }
 }
 // всё ещё коробка -_-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 ///*
 //fun main() {
 //    var truePassword = "123456"
@@ -419,7 +448,45 @@ fun Case1()
 ////121233331212
 ////лол кек чебурек
 ////маинкрафт моя жизнь
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 ////дима таранов     1
 //
 ////00000000
@@ -428,7 +495,50 @@ fun Case1()
 ////0 0000 0
 ////00000000
 ////маинкрафт
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //ето мая точка, вы кто такие, я вас не звал, идите нахфиг) "ArtemKorol1999"
 fun Begin13 ()
 {
@@ -471,52 +581,13 @@ fun Begin15()
     print("Ввидите площадь круга:")
     var S = readLine()!!.toDouble()
     print("Диаметр круга:")
-    var D = 2 * sqrt(S / p)
+    var D = 2*sqrt(S/p)
     print(D)
     print("Длинна окружности:")
     var R = D/2
     var L = 2*p*R
+    print(L)
 }
-fun Integer19()
-{
-print("Integer19\n С начала суток прошло N секунд (N — целое). Найти количество полных минут, прошедших с начала суток\n")
-print("Ввидите кол-во сек.\n")
-var s = readLine()!!.toInt()
-print("Кол-во полных минут:\n${s/60}\n")
-}
-fun Integer20()
-{
-    print("Integer20\n С начала суток прошло N секунд (N — целое). Найти количество полных часов, прошедших с начала суток\n")
-    print("Ввидите кол-во сек.\n")
-    var s = readLine()!!.toInt()
-    print("Кол-во полных часов:\n${s/360}\n")
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1412,3 +1483,73 @@ fun begin9 (){
 //
 //
 //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fun if4() {
+    println("If6.\n Даны два числа. Вывести большее из них.")
+    println("Первое число: ")
+    var a = readLine().toString().toDouble()
+    println("Второе число: ")
+    var b = readLine().toString().toDouble()
+    if (a > b) {
+        println("Большее число: $a")
+    } else if (b < a) {
+        println("Большее число: $b")
+    } else if (a == b) {
+        println("Оба числа равны.")
+    } else {
+        println("Программа тебя не понимает.")
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
