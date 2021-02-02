@@ -24,7 +24,7 @@ fun main()
 fun explorer()
 {
     println("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)")
-    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1")
+    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1\n")
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
@@ -36,6 +36,7 @@ fun explorer()
         "b12" -> Begin12()
         "b13" -> Begin13()
         "b15" -> Begin15()
+        "if4" -> If4()
         "b33" -> Begin33()
 //        "b23" -> Begin23()
         "i11"-> Integer11()
@@ -236,6 +237,23 @@ fun If30()
         }
     }
 }
+fun If4() {
+    println("If6.\n Даны два числа. Вывести большее из них.")
+    println("Первое число: ")
+    var a = readLine().toString().toDouble()
+    println("Второе число: ")
+    var b = readLine().toString().toDouble()
+    if (a > b) {
+        println("Большее число: $a")
+    } else if (b < a) {
+        println("Большее число: $b")
+    } else if (a == b) {
+        println("Оба числа равны.")
+    } else {
+        println("Программа тебя не понимает.")
+    }
+}
+
 fun If29()
 {
     val n = 0
@@ -1210,7 +1228,7 @@ fun begin9 (){
 ////    var b = readLine().toString().toDouble()
 ////    println(sqrt(a*b))
 ////}
-fun int11() {
+/*fun int11() {
     println("Дано трехзначное число. Найти сумму и произведение его цифр.")
     println("Введите число: ")
     var num = readLine().toString().toDouble()
@@ -1220,6 +1238,8 @@ fun int11() {
     println("Сумма: ${num_sot+num_des+num_edin}")
     println("Произведение: ${num_sot+num_des+num_edin}")
 }
+
+ */
 //////просто строчки (конец)
 //
 //
@@ -1525,3 +1545,73 @@ fun int11() {
 //
 //
 //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fun if4() {
+    println("If6.\n Даны два числа. Вывести большее из них.")
+    println("Первое число: ")
+    var a = readLine().toString().toDouble()
+    println("Второе число: ")
+    var b = readLine().toString().toDouble()
+    if (a > b) {
+        println("Большее число: $a")
+    } else if (b < a) {
+        println("Большее число: $b")
+    } else if (a == b) {
+        println("Оба числа равны.")
+    } else {
+        println("Программа тебя не понимает.")
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
