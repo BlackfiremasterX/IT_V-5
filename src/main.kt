@@ -33,6 +33,7 @@ fun explorer()
         "b3" ->Begin3()
         "b4" ->Begin4()
         "b5" ->Begin5()
+        "b6" ->Begin6()
         "b12" -> Begin12()
         "b13" -> Begin13()
         "b15" -> Begin15()
@@ -89,6 +90,17 @@ fun Begin5()
     var a = 100
     var V =a*a*a
     var S = 6*a*a
+    println(V)
+    println(S)
+}
+
+fun Begin6()
+{
+    var a = 100
+    var b = 555
+    var c = 222
+    var V = a*b*c
+    var S = 2*(a*b+b*c+a*c)
     println(V)
     println(S)
 }
