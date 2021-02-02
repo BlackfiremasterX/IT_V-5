@@ -54,26 +54,18 @@ fun explorer()
         else -> println("Такой задачи нет!")
     }
 }
-//
-
-
-
 fun Begin1()
 {
    var a = 5
    var P = 4*a
    println(P)
 }
-
-
 fun Begin2()
 {
     var a = 100
     var S = a*a
     println(S)
 }
-
-
 fun Begin3()
 {
     var a = 100
@@ -83,8 +75,6 @@ fun Begin3()
     println(S)
     println(P)
 }
-
-
 fun Begin4()
 {
     var d = 100
@@ -92,7 +82,6 @@ fun Begin4()
     var L = p * d
     println(L)
 }
-
 fun Begin5()
 {
     var a = 100
@@ -101,19 +90,6 @@ fun Begin5()
     println(V)
     println(S)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 fun Begin12()//Михаил Розенталь
 {
     print("\nBegin12\nДаны катеты прямоугольного треугольника a и b. Найти его гипотенузу и периметр P.\n")
@@ -128,15 +104,6 @@ fun Begin12()//Михаил Розенталь
     print("Гипотенуза с = $c \n Гипотенуза сpow = $cpow \n")
     print("Периметр = $P \n Периметр(pow) = $Pcpow \n")
 }
-
-
-
-//fun Begin23()
-//{
-//
-//
-//}
-
 fun Integer11()//Решила межгалакическая коллегия группы итв-5
 {
     print("Integer11.\nДано трехзначное число. Найти сумму и произведение его цифр.\n")
@@ -147,8 +114,11 @@ fun Integer11()//Решила межгалакическая коллегия г
     println("Единицы: ${number%100%10}")
     println("Сумма: ${number/100+number%100/10+number%100%10}")
     println("Произведение: ${number/100*number%100/10*number%100%10}")
+}
 
 
+fun If30_1()
+{
 
 }
 
@@ -459,19 +429,7 @@ fun Case1()
     }
 }
 // всё ещё коробка -_-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 ///*
 //fun main() {
 //    var truePassword = "123456"
