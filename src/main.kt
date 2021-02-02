@@ -106,7 +106,18 @@ fun Begin6()
     println(S)
 }
 
-
+fun begin6() {
+    println("a: ")
+    var a = readLine().toString().toDouble()
+    println("b: ")
+    var b = readLine().toString().toDouble()
+    println("h: ")
+    var h = readLine().toString().toDouble()
+    var V = a*b*h
+    var S = 2*(a*b+h*b+a*h)
+    println("V = $V")
+    println("S = $S")
+}
 
 
 
