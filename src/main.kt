@@ -24,7 +24,7 @@ fun main()
 fun explorer()
 {
     println("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)")
-    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1\nInteger11\nInteger10\n")
+    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1\n")
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
@@ -32,9 +32,9 @@ fun explorer()
         "b12" -> Begin12()
         "b13" -> Begin13()
         "b15" -> Begin15()
+        "if4" -> If4()
         "b33" -> Begin33()
 //        "b23" -> Begin23()
-        "i10" -> Integer10()
         "i11"-> Integer11()
         "i28" -> Integer28()
         "f1" -> For1()
@@ -49,7 +49,7 @@ fun explorer()
         else -> println("Такой задачи нет!")
     }
 }
-///
+//
 
 fun Begin12()//Михаил Розенталь
 {
@@ -89,25 +89,6 @@ fun Integer11()//Решила межгалакическая коллегия г
 
 }
 
-fun Integer10()
-{
-    print("Введите трёхзначное число :")
-    var ch = readLine()!!.toInt()
-    var ed = ch%100%10
-    println("Единицы : $ed")
-    var des = ch%100/10
-    println("Десятки : $des")
-
-
-
-
-
-
-
-
-
-
-}
 
 // большая коробка решений Гладких Марины *_*
 fun Integer28()
@@ -194,6 +175,23 @@ fun If30()
         }
     }
 }
+fun If4() {
+    println("If6.\n Даны два числа. Вывести большее из них.")
+    println("Первое число: ")
+    var a = readLine().toString().toDouble()
+    println("Второе число: ")
+    var b = readLine().toString().toDouble()
+    if (a > b) {
+        println("Большее число: $a")
+    } else if (b < a) {
+        println("Большее число: $b")
+    } else if (a == b) {
+        println("Оба числа равны.")
+    } else {
+        println("Программа тебя не понимает.")
+    }
+}
+
 fun If29()
 {
     val n = 0
@@ -380,6 +378,19 @@ fun Case1()
     }
 }
 // всё ещё коробка -_-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 ///*
 //fun main() {
 //    var truePassword = "123456"
@@ -437,7 +448,45 @@ fun Case1()
 ////121233331212
 ////лол кек чебурек
 ////маинкрафт моя жизнь
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 ////дима таранов     1
 //
 ////00000000
@@ -446,7 +495,50 @@ fun Case1()
 ////0 0000 0
 ////00000000
 ////маинкрафт
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //ето мая точка, вы кто такие, я вас не звал, идите нахфиг) "ArtemKorol1999"
 fun Begin13 ()
 {
@@ -496,35 +588,6 @@ fun Begin15()
     var L = 2*p*R
     print(L)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1420,3 +1483,73 @@ fun begin9 (){
 //
 //
 //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fun if4() {
+    println("If6.\n Даны два числа. Вывести большее из них.")
+    println("Первое число: ")
+    var a = readLine().toString().toDouble()
+    println("Второе число: ")
+    var b = readLine().toString().toDouble()
+    if (a > b) {
+        println("Большее число: $a")
+    } else if (b < a) {
+        println("Большее число: $b")
+    } else if (a == b) {
+        println("Оба числа равны.")
+    } else {
+        println("Программа тебя не понимает.")
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
