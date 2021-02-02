@@ -48,7 +48,7 @@ fun explorer()
         else -> println("Такой задачи нет!")
     }
 }
-//
+///
 
 fun Begin12()//Михаил Розенталь
 {
