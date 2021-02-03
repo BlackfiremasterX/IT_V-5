@@ -607,7 +607,25 @@ fun Integer20()
     var s = readLine()!!.toInt()
     print("Полное кол-во часов:${s/360}")
 }
+fun Blooean7()
+{
+  print("Blooean7\nДаны три целых числа: A, B, C. Проверить истинность высказывания: «Число B находится между числами A и C»\nВвидит 1 ")
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 fun integer1() {
     print("Введите расстояние в сантиметрах")
     var a = readLine()!!.toDouble()
