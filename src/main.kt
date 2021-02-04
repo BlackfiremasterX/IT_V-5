@@ -68,6 +68,7 @@ fun explorer()
         "bl7" -> Boolean7()
         "for1" -> For1_master()
         "for2" -> For2_master()
+         "bl34" -> Boolean34()
         else -> println("Такой задачи нет!")
     }
 }
