@@ -8,24 +8,31 @@ fun main()
         explorer()
 
         println("Хотите ли вы продолжить тестирование задач? [да/нет]")
-        print("Ответ: "); var answer = readLine()!!.toString()
+        print("Ответ: "); var answer = readLine()!!.toString().toLowerCase()
 
-        if (answer == "да" || answer == "Да" || answer == "lf" || answer == "Lf" || answer == "yes" || answer == "Yes")
-            continue
-        else if (answer == "нет" || answer == "Нет"  || answer == "Ytn" || answer == "ytn"  || answer == "No" || answer == "no")
-            break
-        else
+        when(answer)
         {
-            println("Программа не может распознать ваш ответ. Выполнятеся аварийный выход")
-            break
+            "да","lf","yes" -> continue
+            "нет","ytn","no" -> break
+            else ->  {println("Программа не может распознать ваш ответ. Выполнятеся аварийный выход");break }
         }
+
+//        if (answer == "да" || answer == "Да" || answer == "lf" || answer == "Lf" || answer == "yes" || answer == "Yes")
+//            continue
+//        else if (answer == "нет" || answer == "Нет"  || answer == "Ytn" || answer == "ytn"  || answer == "No" || answer == "no")
+//            break
+//        else
+//        {
+//            println("Программа не может распознать ваш ответ. Выполнятеся аварийный выход")
+//            break
+//        }
     }
 }
 fun explorer()
 {
     println("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)")
     print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1\nInteger19\nInteger20\n")
-    print("Выберите задачу: "); var user_choise = readLine()
+    print("Выберите задачу: "); var user_choise = readLine().toString().toLowerCase()
     when(user_choise)
     {
         "b1" ->Begin1()
@@ -45,7 +52,7 @@ fun explorer()
 //        "b23" -> Begin23()
         "i7"-> Interger7()
         "i9"-> Interger9()
-        "i11"-> Integer11()
+        "i11", "ш11"-> Integer11()
         "i28" -> Integer28()
         "f1" -> For1()
         "a1" -> Araray1()
