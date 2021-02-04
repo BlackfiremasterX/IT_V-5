@@ -28,8 +28,8 @@ fun main()
 }
 fun explorer()
 {
-    println("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)")
-    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1\nInteger19\nInteger20\nBoolean7\n")
+    println("Добро пожаловать!\nЭта программа является решебником по задачнику Абрамяна на языке Kotlin.\nВнутренний синтаксис(Begin1 - b1)")
+//    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1\nInteger19\nInteger20\nBoolean7\n")
     print("Выберите задачу: "); var user_choise = readLine().toString().toLowerCase()
     when(user_choise)
     {
@@ -40,7 +40,9 @@ fun explorer()
         "b5" ->Begin5()
         "b6" ->begin6()
         "b7" ->Begin7_1()
+        "b8" ->Begin8_1()
         "b61" -> begin6_1()
+        "b10" -> Begin10_1()
         "b12" -> Begin12()
         "b13" -> Begin13()
         "b15" -> Begin15()
@@ -64,6 +66,8 @@ fun explorer()
         "i20" -> Integer20()
         "c1" -> Case1()
         "bl7" -> Boolean7()
+        "for1" -> For1_master()
+        "for2" -> For2_master()
         else -> println("Такой задачи нет!")
     }
 }
@@ -129,9 +133,28 @@ fun Begin7_1()
     println(S)
 }
 
+fun Begin8_1()
+{
+    var a = 100
+    var b = 500
+    var S = (a+b)/2
+    println(S)
+}
 
 
-
+fun Begin10_1()
+{
+    var a = 0
+    var b = 0
+    var S = a+b
+    var F = a-b
+    var G = a*b
+    var X = a/b
+    println(S)
+    println(F)
+    println(G)
+    println(X)
+}
 
 
 
@@ -155,7 +178,7 @@ fun begin6() { //решил Лев Горобец
 
 
 
-fun Begin12()//Михаил Розенталь
+fun Begin12()//Миха Розенталь
 {
     print("\nBegin12\nДаны катеты прямоугольного треугольника a и b. Найти его гипотенузу и периметр P.\n")
     print("Введите катет а: ")
@@ -841,4 +864,33 @@ fun if4() {
     } else {
         println("Программа тебя не понимает.")
     }
+}
+
+fun For1_master()
+{
+    println("For1\n. Даны целые числа K и N (N > 0). Вывести N раз число K.\n")
+    print("Введите число K: ")
+    var K = readLine()!!.toInt()
+    print("Введите количество N: ")
+    var N = readLine()!!.toInt()
+    for(counter in 1..N)
+    {
+        println(K)
+    }
+}
+
+
+fun For2_master()
+{
+    println("For2")
+    print("Введите число A: ")
+    var A = readLine()!!.toInt()
+    print("Введите число B: ")
+    var B = readLine()!!.toInt()
+    for(counter in A..B)
+    {
+        println(counter)
+    }
+    var amount = B-A+1
+    print("Количество чисел: $amount\n")
 }
