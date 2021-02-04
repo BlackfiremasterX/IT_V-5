@@ -287,9 +287,9 @@ fun If4() //решил Лев Горобец
 {
     println("If6.\n Даны два числа. Вывести большее из них.")
     println("Первое число: ")
-    var a = readLine()!!.toDouble()
+    var a = readLine()!!
     println("Второе число: ")
-    var b = readLine()!!.toDouble()
+    var b = readLine()!!
     if (a > b) {
         println("Большее число: $a")
     } else if (b > a) {
