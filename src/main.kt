@@ -293,7 +293,7 @@ fun If4() //решил Лев Горобец
     var b = readLine()!!.toDouble()
     if (a > b) {
         println("Большее число: $a")
-    } else if (b < a) {
+    } else if (b > a) {
         println("Большее число: $b")
     } else if (a == b) {
         println("Оба числа равны.")
