@@ -316,9 +316,6 @@ fun if8() //решил Лев Горобец
     if (a > b) {
         println("Большее число: $a")
         println("Меньшее число: $b")
-    } else if (b > a) {
-        println("Большее число: $b")
-        println("Меньшее число: $a")
     } else if (a == b) {
         println("Оба числа равны.")
     } else {
