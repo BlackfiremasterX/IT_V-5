@@ -40,12 +40,14 @@ fun explorer()
         "b5" ->Begin5()
         "b6" ->begin6()
         "b7" ->Begin7_1()
+        "b8" ->Begin8_1()
         "b61" -> begin6_1()
+        "b10" -> Begin10_1()
         "b12" -> Begin12()
         "b13" -> Begin13()
         "b15" -> Begin15()
-        "i4" -> If4()
-        "i8" -> if8()
+        "if6" -> If6()
+        "if8" -> if8()
         "b33" -> Begin33()
 //        "b23" -> Begin23()
         "i7"-> Interger7()
@@ -131,9 +133,28 @@ fun Begin7_1()
     println(S)
 }
 
+fun Begin8_1()
+{
+    var a = 100
+    var b = 500
+    var S = (a+b)/2
+    println(S)
+}
 
 
-
+fun Begin10_1()
+{
+    var a = 0
+    var b = 0
+    var S = a+b
+    var F = a-b
+    var G = a*b
+    var X = a/b
+    println(S)
+    println(F)
+    println(G)
+    println(X)
+}
 
 
 
@@ -157,7 +178,7 @@ fun begin6() { //решил Лев Горобец
 
 
 
-fun Begin12()//Михаил Розенталь
+fun Begin12()//Миха Розенталь
 {
     print("\nBegin12\nДаны катеты прямоугольного треугольника a и b. Найти его гипотенузу и периметр P.\n")
     print("Введите катет а: ")
@@ -291,13 +312,13 @@ fun If30()
         }
     }
 }
-fun If4() //решил Лев Горобец
+fun If6() //решил Лев Горобец
 {
     println("If6.\n Даны два числа. Вывести большее из них.")
     println("Первое число: ")
-    var a = readLine()!!.toDouble()
+    var a = readLine()!!
     println("Второе число: ")
-    var b = readLine()!!.toDouble()
+    var b = readLine()!!
     if (a > b) {
         println("Большее число: $a")
     } else if (b > a) {
@@ -312,19 +333,20 @@ fun if8() //решил Лев Горобец
 {
     println("If8.\nДаны два числа. Вывести вначале большее, а затем меньшее из них.")
     println("Первое число: ")
-    var a = readLine().toString().toDouble()
+    var a = readLine()!!
     println("Второе число: ")
-    var b = readLine().toString().toDouble()
+    var b = readLine()!!
     if (a > b) {
         println("Большее число: $a")
         println("Меньшее число: $b")
-    } else if (b < a) {
+    } else if (b > a) {
         println("Большее число: $b")
         println("Меньшее число: $a")
     } else if (a == b) {
         println("Оба числа равны.")
     } else {
-        println("Программа тебя не понимает.")
+        println("Большее число: $b")
+        println("Меньшее число: $a")
     }
 }
 fun If29()
