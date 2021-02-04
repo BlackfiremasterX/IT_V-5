@@ -8,31 +8,24 @@ fun main()
         explorer()
 
         println("Хотите ли вы продолжить тестирование задач? [да/нет]")
-        print("Ответ: "); var answer = readLine()!!.toString().toLowerCase()
+        print("Ответ: "); var answer = readLine()!!.toString()
 
-        when(answer)
+        if (answer == "да" || answer == "Да" || answer == "lf" || answer == "Lf" || answer == "yes" || answer == "Yes")
+            continue
+        else if (answer == "нет" || answer == "Нет"  || answer == "Ytn" || answer == "ytn"  || answer == "No" || answer == "no")
+            break
+        else
         {
-            "да","lf","yes" -> continue
-            "нет","ytn","no" -> break
-            else ->  {println("Программа не может распознать ваш ответ. Выполнятеся аварийный выход");break }
+            println("Программа не может распознать ваш ответ. Выполнятеся аварийный выход")
+            break
         }
-
-//        if (answer == "да" || answer == "Да" || answer == "lf" || answer == "Lf" || answer == "yes" || answer == "Yes")
-//            continue
-//        else if (answer == "нет" || answer == "Нет"  || answer == "Ytn" || answer == "ytn"  || answer == "No" || answer == "no")
-//            break
-//        else
-//        {
-//            println("Программа не может распознать ваш ответ. Выполнятеся аварийный выход")
-//            break
-//        }
     }
 }
 fun explorer()
 {
     println("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)")
-    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1\nInteger19\nInteger20\n")
-    print("Выберите задачу: "); var user_choise = readLine().toString().toLowerCase()
+    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1\nInteger19\nInteger20\nBoolean7\n")
+    print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
         "b1" ->Begin1()
@@ -52,7 +45,7 @@ fun explorer()
 //        "b23" -> Begin23()
         "i7"-> Interger7()
         "i9"-> Interger9()
-        "i11", "ш11"-> Integer11()
+        "i11"-> Integer11()
         "i28" -> Integer28()
         "f1" -> For1()
         "a1" -> Araray1()
@@ -65,6 +58,7 @@ fun explorer()
         "i19" -> Integer19()
         "i20" -> Integer20()
         "c1" -> Case1()
+        "bl7" -> Boolean7()
         else -> println("Такой задачи нет!")
     }
 }
@@ -299,7 +293,7 @@ fun If4() //решил Лев Горобец
     var b = readLine()!!.toDouble()
     if (a > b) {
         println("Большее число: $a")
-    } else if (b < a) {
+    } else if (b > a) {
         println("Большее число: $b")
     } else if (a == b) {
         println("Оба числа равны.")
@@ -464,7 +458,7 @@ fun If3()
         else
             println("Число $number является нулём.\nЗаменяем его на 10\nРезультат: 10")
 
-        println("Хотите продолжить? [да/нет]")
+        println("\nХотите продолжить? [да/нет]\n")
         print("Ответ: "); var answer = readLine()!!.toString()
 
         if (answer == "да" || answer == "Да" || answer == "lf" || answer == "Lf" || answer == "yes" || answer == "Yes")
@@ -473,7 +467,7 @@ fun If3()
             break
         else
         {
-            println("Программа не может распознать ваш ответ. Выполнятеся аварийный выход")
+            println("\nПрограмма не может распознать ваш ответ. Выполнятеся аварийный выход")
             break
         }
     }
@@ -497,7 +491,7 @@ fun Case1()
             else -> println("В неделе всего семь дней. Продлить выходные не получится")
         }
 
-        println("Хотите продолжить? [да/нет]")
+        println("\nХотите продолжить? [да/нет]")
         print("Ответ: "); var answer = readLine()!!.toString()
 
         if (answer == "да" || answer == "Да" || answer == "lf" || answer == "Lf" || answer == "yes" || answer == "Yes")
@@ -626,13 +620,21 @@ fun Integer20()
     var s = readLine()!!.toInt()
     print("Полное кол-во часов:${s/360}")
 }
-fun Blooean7()
+fun Boolean7()
 {
-  print("Blooean7\nДаны три целых числа: A, B, C. Проверить истинность высказывания: «Число B находится между числами A и C»\nВвидит 1 ")
-
-
-
-
+  print("Boolean7\nДаны три целых числа: A, B, C. Проверить истинность высказывания: «Число B находится между числами A и C»\nВвидите 1 число ")
+var A = readLine()!!.toDouble()
+print("Ввидите 2 число")
+    var B = readLine()!!.toDouble()
+    print("Ввидите 3 число")
+    var C = readLine()!!.toDouble()
+    if (A < B && B < C){
+        print("Утверждение верно")
+    }
+   else if (A > B && B > C){
+        print("Утверждение верно")
+    }
+else print("Утверждение не верно (B не находится между A и C)")
 
 
 
