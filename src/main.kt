@@ -28,8 +28,8 @@ fun main()
 }
 fun explorer()
 {
-    println("Добро пожаловать! Эта программа является решебником по задачнику Абрамяна на языке Kotlin\nВнутренний синтаксис(Begin1 - b1)")
-    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1\nInteger19\nInteger20\nBoolean7\n")
+    println("Добро пожаловать!\nЭта программа является решебником по задачнику Абрамяна на языке Kotlin.\nВнутренний синтаксис(Begin1 - b1)")
+//    print("Список доступных задач:\nBegin12\nBegin13\nBegin23\nBegin33\nInteder28\nFor1\nArray1\nIf30\nIf29\nIf28\nIf1\nIf2\nIf3\nCase1\nInteger19\nInteger20\nBoolean7\n")
     print("Выберите задачу: "); var user_choise = readLine().toString().toLowerCase()
     when(user_choise)
     {
@@ -64,6 +64,8 @@ fun explorer()
         "i20" -> Integer20()
         "c1" -> Case1()
         "bl7" -> Boolean7()
+        "for1" -> For1_master()
+        "for2" -> For2_master()
         else -> println("Такой задачи нет!")
     }
 }
@@ -843,4 +845,33 @@ fun if4() {
     } else {
         println("Программа тебя не понимает.")
     }
+}
+
+fun For1_master()
+{
+    println("For1\n. Даны целые числа K и N (N > 0). Вывести N раз число K.\n")
+    print("Введите число K: ")
+    var K = readLine()!!.toInt()
+    print("Введите количество N: ")
+    var N = readLine()!!.toInt()
+    for(counter in 1..N)
+    {
+        println(K)
+    }
+}
+
+
+fun For2_master()
+{
+    println("For2")
+    print("Введите число A: ")
+    var A = readLine()!!.toInt()
+    print("Введите число B: ")
+    var B = readLine()!!.toInt()
+    for(counter in A..B)
+    {
+        println(counter)
+    }
+    var amount = B-A+1
+    print("Количество чисел: $amount\n")
 }
