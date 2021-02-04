@@ -133,16 +133,17 @@ fun Begin7_1()
 
 
 fun begin6() { //решил Лев Горобец
-    println("a: ")
-    var a = readLine().toString().toDouble()
-    println("b: ")
-    var b = readLine().toString().toDouble()
-    println("h: ")
-    var h = readLine().toString().toDouble()
+    println("Begin6.\n Даны длины ребер a, b, c прямоугольного параллелепипеда. Найти его объем V = a·b·c и площадь поверхности S = 2·(a·b + b·c + a·c).\n")
+    println("Ребро a: ")
+    var a = readLine()!!.toDouble()
+    println("Ребро b: ")
+    var b = readLine()!!.toDouble()
+    println("Ребро h: ")
+    var h = readLine()!!.toDouble()
     var V = a*b*h
     var S = 2*(a*b+h*b+a*h)
-    println("V = $V")
-    println("S = $S")
+    println("V (Объем) = $V")
+    println("S (Площадь поверхности) = $S")
 }
 
 
@@ -286,9 +287,9 @@ fun If4() //решил Лев Горобец
 {
     println("If6.\n Даны два числа. Вывести большее из них.")
     println("Первое число: ")
-    var a = readLine().toString().toDouble()
+    var a = readLine()!!.toDouble()
     println("Второе число: ")
-    var b = readLine().toString().toDouble()
+    var b = readLine()!!.toDouble()
     if (a > b) {
         println("Большее число: $a")
     } else if (b < a) {
