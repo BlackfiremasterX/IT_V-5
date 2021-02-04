@@ -122,16 +122,17 @@ fun Begin6()
 
 
 fun begin6() { //решил Лев Горобец
-    println("a: ")
+    println("Begin6.\n Даны длины ребер a, b, c прямоугольного параллелепипеда. Найти его объем V = a·b·c и площадь поверхности S = 2·(a·b + b·c + a·c).\n")
+    println("Ребро a: ")
     var a = readLine()!!.toDouble()
-    println("b: ")
+    println("Ребро b: ")
     var b = readLine()!!.toDouble()
-    println("h: ")
+    println("Ребро h: ")
     var h = readLine()!!.toDouble()
     var V = a*b*h
     var S = 2*(a*b+h*b+a*h)
-    println("V = $V")
-    println("S = $S")
+    println("V (Объем) = $V")
+    println("S (Площадь поверхности) = $S")
 }
 
 
