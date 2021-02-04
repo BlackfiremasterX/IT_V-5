@@ -40,7 +40,9 @@ fun explorer()
         "b5" ->Begin5()
         "b6" ->begin6()
         "b7" ->Begin7_1()
+        "b8" ->Begin8_1()
         "b61" -> begin6_1()
+        "b10" -> Begin10_1()
         "b12" -> Begin12()
         "b13" -> Begin13()
         "b15" -> Begin15()
@@ -129,9 +131,28 @@ fun Begin7_1()
     println(S)
 }
 
+fun Begin8_1()
+{
+    var a = 100
+    var b = 500
+    var S = (a+b)/2
+    println(S)
+}
 
 
-
+fun Begin10_1()
+{
+    var a = 0
+    var b = 0
+    var S = a+b
+    var F = a-b
+    var G = a*b
+    var X = a/b
+    println(S)
+    println(F)
+    println(G)
+    println(X)
+}
 
 
 
@@ -155,7 +176,7 @@ fun begin6() { //решил Лев Горобец
 
 
 
-fun Begin12()//Михаил Розенталь
+fun Begin12()//Миха Розенталь
 {
     print("\nBegin12\nДаны катеты прямоугольного треугольника a и b. Найти его гипотенузу и периметр P.\n")
     print("Введите катет а: ")
