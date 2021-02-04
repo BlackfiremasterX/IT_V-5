@@ -310,9 +310,9 @@ fun if8() //решил Лев Горобец
 {
     println("If8.\nДаны два числа. Вывести вначале большее, а затем меньшее из них.")
     println("Первое число: ")
-    var a = readLine().toString().toDouble()
+    var a = readLine()!!
     println("Второе число: ")
-    var b = readLine().toString().toDouble()
+    var b = readLine()!!
     if (a > b) {
         println("Большее число: $a")
         println("Меньшее число: $b")
