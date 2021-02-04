@@ -41,8 +41,10 @@ fun explorer()
         "b6" ->begin6()
         "b7" ->Begin7_1()
         "b8" ->Begin8_1()
+        "b9" ->Begin9_1()
         "b61" -> begin6_1()
         "b10" -> Begin10_1()
+        "b11" -> Begin11_1()
         "b12" -> Begin12()
         "b13" -> Begin13()
         "b15" -> Begin15()
@@ -104,8 +106,8 @@ fun Begin4()
 }
 fun Begin5()
 {
-    var a = 100
-    var V =a*a*a
+    var a = 100.0
+    var V =a.pow(3)
     var S = 6*a*a
     println(V)
     println(S)
@@ -140,22 +142,63 @@ fun Begin8_1()
     var S = (a+b)/2
     println(S)
 }
+ fun Begin9_1()
+ {
+     var a = sqrt(200.0)
+     var b = a.pow(2)
 
+
+println(a)
+     println(b)
+
+
+ }
 
 fun Begin10_1()
 {
-    var a = 0
-    var b = 0
-    var S = a+b
-    var F = a-b
-    var G = a*b
-    var X = a/b
+    var a = 3.0
+    var b = 4.0
+    var a_2 = a.pow(2)
+    var b_2 = b.pow(2)
+    var S = a_2+b_2
+    var F = a_2*b_2
+    var G = a_2*b_2
+    var X = a_2/b_2
     println(S)
     println(F)
     println(G)
     println(X)
 }
 
+fun Begin11_1()
+{
+    print("Введите a: ")
+    var a = readLine()!!.toDouble()
+    print("Введите b: ")
+    var b = readLine()!!.toDouble()
+    var a_module = sqrt(a.pow(2)) ////// |-20|=20    |-999|=999  |65|=65    -5*(-5)=+25  5*5=25
+    var b_module = sqrt(b.pow(2))
+    println("Наши числа: $a и $b")
+    println("По модулю они равны: a = $a_module и b = $b_module")
+    var S = a_module+b_module
+
+    var F = a_module-b_module
+
+    var G = a_module*b_module
+
+    var X = a_module/b_module
+
+//-2*(-2)=4
+
+    print("Сумма модулей: ")
+    println(S)
+    print("Разность модулей: ")
+    println(F)
+    print("Произведение модулей: ")
+    println(G)
+    print("Частное модулей: ")
+    println(X)
+}
 
 
 
