@@ -123,11 +123,11 @@ fun Begin6()
 
 fun begin6() { //решил Лев Горобец
     println("a: ")
-    var a = readLine().toString().toDouble()
+    var a = readLine()!!.toDouble()
     println("b: ")
-    var b = readLine().toString().toDouble()
+    var b = readLine()!!.toDouble()
     println("h: ")
-    var h = readLine().toString().toDouble()
+    var h = readLine()!!.toDouble()
     var V = a*b*h
     var S = 2*(a*b+h*b+a*h)
     println("V = $V")
