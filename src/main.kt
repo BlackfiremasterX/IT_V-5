@@ -71,7 +71,9 @@ fun explorer()
         "for1" -> For1_master()
         "for2" -> For2_master()
         "i28m" -> Integer28_master()
-//         "bl34" -> Boolean34()
+//
+//        "bl34" -> Boolean34()
+        "i24" -> Intedger24()
         else -> println("Такой задачи нет!")
     }
 }
@@ -716,18 +718,25 @@ fun Boolean7() {
 //    }
 //}
 //этот проект заброшен создателем
-
-
-
-
-
-
-
-
-
-
-
-
+fun  Intedger24()
+{
+    val week_days_list = mapOf(
+            1 to "Понедельник",
+            2 to "Вторник",
+            3 to "Среда",
+            4 to "Четверг",
+            5 to "Пятница",
+            6 to "Суббота",
+            0 to "Воскресенье",
+    )
+    print("Integer28.")
+    print("Дни недели пронумерованы следующим образом: 0 — воскресенье, 1 — понедельник, 2 — вторник, . . . , 6 — суббота. Дано целое число K, лежащее в диапазоне 1–365. Определить номер дня недели для K-го дня года, если известно, что в этом году 1 января было понедельником.")
+    print("\nВведите день года, который хотите узнать: ")
+    var year_days = readLine()!!.toInt()
+    var week_days = 1
+    var user_choise = (year_days+week_days-1)%7
+    print("$year_days-ый день: ${week_days_list[user_choise]}\n")
+}
 fun integer1() {
     print("Введите расстояние в сантиметрах")
     var a = readLine()!!.toDouble()
